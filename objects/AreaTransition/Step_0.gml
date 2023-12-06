@@ -1,10 +1,7 @@
 /// @description 
 //pause_check_exit
 
-x = Player.x
-y = Player.y
-//x = camera_center_x
-//y = camera_center_y
+set_position()
 
 if progress == 0 {
 	pause_instances()

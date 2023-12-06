@@ -14,7 +14,13 @@ waittime = -1;
 progress = 0;
 growspeed = .0175
 
-x = Player.x
-y = Player.y
-//x = camera_center_x
-//y = camera_center_y
+set_position = function() {
+	x = Player.x
+	y = Player.y
+	//x = camera_center_x
+	//y = camera_center_y
+	x = lerp(x, camera_center_x, 1 * (1 - progress))
+	y = lerp(y, camera_center_y, 1 * (1 - progress))
+}
+
+set_position()

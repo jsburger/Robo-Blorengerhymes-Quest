@@ -48,8 +48,8 @@
   },
   "origin": 9,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Transition Screen",
+    "path": "folders/Sprites/Misc/Transition Screen.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
