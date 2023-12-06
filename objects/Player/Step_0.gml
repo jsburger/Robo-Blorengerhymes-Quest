@@ -31,6 +31,7 @@ game_object_exit
 		}
 		// Grabbing and Throwing
 		if (can_grab && button_pressed(inputs.pickup)) {
+			// Throw instance
 			if instance_exists(grabbed_instance) {
 				set_sprite(ps.THROW)
 				//Throw instance
@@ -88,7 +89,7 @@ game_object_exit
 		}
 	}
 	
-	if (state == PlayerStates.HOLDING) {
+	if (state == PlayerStates.HOLDING && sprite_state != ps.THROW) {
 		if !instance_exists(grabbed_instance) {
 			state_change(PlayerStates.IDLE)
 		}
