@@ -93,6 +93,7 @@
     {"id":{"name":"sprHaniwaProjectile","path":"sprites/sprHaniwaProjectile/sprHaniwaProjectile.yy",},},
     {"id":{"name":"sprPlayerHoldWalk1","path":"sprites/sprPlayerHoldWalk1/sprPlayerHoldWalk1.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
+    {"id":{"name":"tilesetWallsHedge","path":"tilesets/tilesetWallsHedge/tilesetWallsHedge.yy",},},
     {"id":{"name":"Clickables","path":"scripts/Clickables/Clickables.yy",},},
     {"id":{"name":"sprPlayerWalk2","path":"sprites/sprPlayerWalk2/sprPlayerWalk2.yy",},},
     {"id":{"name":"sprPlayerIdle5","path":"sprites/sprPlayerIdle5/sprPlayerIdle5.yy",},},
