@@ -73,19 +73,19 @@ texture_set_stage(shader_get_sampler_index(shader, "Palette"), sprite_get_textur
 texture_set_stage(shader_get_sampler_index(shader, "Shadow"), surface_get_texture(shadow_surf))
 shader_set_uniform_f(shader_get_uniform(shader, "AmbientLight"), dark)
 
-if (!global.paused) {
+//if (!global.paused) {
 	shader_set_uniform_f(shader_get_uniform(shader, "RelativeCoords"),
 		camera_x/room_width, camera_y/room_height, camera_right/room_width, camera_bottom/room_height
 	)
 	shader_set_uniform_f(shader_get_uniform(shader, "ScreenSize"), camera_width, camera_height)
-}
-else {
-	// When paused, the 'screen' is bigger
-	shader_set_uniform_f(shader_get_uniform(shader, "RelativeCoords"),
-		0, 0, 1, 1
-	)
-	shader_set_uniform_f(shader_get_uniform(shader, "ScreenSize"), room_width, room_height)
-}
+//}
+//else {
+//	// When paused, the 'screen' is bigger
+//	shader_set_uniform_f(shader_get_uniform(shader, "RelativeCoords"),
+//		0, 0, 1, 1
+//	)
+//	shader_set_uniform_f(shader_get_uniform(shader, "ScreenSize"), room_width, room_height)
+//}
 set_flash(false);
 
 draw_set_shadow_mask(SHADOWMASK.FLOOR)
@@ -99,10 +99,11 @@ repeat(_amount){
 	with _inst {
 		// Normal draw:
 		y -= z;
-		//trace(object_get_name(object_index))
+		image_xscale *= flip;
 		draw_set_shadow_mask(shadow_layer)
 		event_perform(ev_draw, ev_draw_normal);
 		y += z;
+		image_xscale /= flip;
 	}
 	_y++;
 }

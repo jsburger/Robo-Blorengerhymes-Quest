@@ -33,6 +33,9 @@ event_inherited();
 		
 		self.holder = holder
 		
+		persistent = held_instance.is_hold_persistent
+		held_instance.persistent = persistent
+		
 		is_held = true
 	}
 	
@@ -50,6 +53,8 @@ event_inherited();
 		if instance_exists(instance) {
 			instance.is_held = false;
 			instance.is_thrown = false;
+			instance.persistent = false;
 		}
+		persistent = false;
 		instance_destroy()
 	}

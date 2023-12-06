@@ -46,7 +46,7 @@ function CollisionInfo() constructor {
 
 /// @self GameObject
 function doWallCollision(type = COLLISIONS.LOW) {
-	#macro TileWidth 32
+	#macro TileWidth 64
 	
 	#region broken new code :(
 	//if (speed != 0) {

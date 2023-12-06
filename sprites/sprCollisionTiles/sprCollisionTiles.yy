@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sprCollisionTiles",
-  "bbox_bottom": 95,
+  "bbox_bottom": 191,
   "bbox_left": 0,
-  "bbox_right": 159,
+  "bbox_right": 319,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 96,
+  "height": 192,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a11d0a7d-c552-4d5e-ab1d-0f272b9b13a0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 160,
+  "width": 320,
 }

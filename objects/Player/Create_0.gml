@@ -46,7 +46,7 @@ event_inherited();
 			facing = direction
 		}
 		sprite_index = sprite.get_sprite(facing)
-		image_xscale = sprite.get_flip(facing)
+		flip = sprite.get_flip(facing)
 		
 	}
 	

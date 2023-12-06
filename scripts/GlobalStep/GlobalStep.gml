@@ -20,12 +20,19 @@ draw_set_font(Limestock)
 function game_step() {
 	global.CurrentFrame += 1
 	__modifiable_step()
+	
+	if button_pressed(inputs.talk) {
+		instance_create(0, 0, RoomTransition)
+	}
 }
 //Runs every frame.
 function global_step() {
 	
 	if !instance_exists(GameCont) && !global.paused {
 		instance_create_layer(0, 0, "Instances", GameCont)
+	}
+	if !instance_exists(_GameCapture) {
+		instance_create_layer(0, 0, "Instances", _GameCapture)
 	}
 
 

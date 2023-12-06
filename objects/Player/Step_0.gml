@@ -87,6 +87,12 @@ game_object_exit
 			}
 		}
 	}
+	
+	if (state == PlayerStates.HOLDING) {
+		if !instance_exists(grabbed_instance) {
+			state_change(PlayerStates.IDLE)
+		}
+	}
 
 #endregion
 

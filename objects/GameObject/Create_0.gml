@@ -21,6 +21,7 @@
 
 #region Visuals
 	flash = 0
+	flip = 1; // Multiply xscale by this before drawing
 #endregion
 
 #region Shadows
@@ -78,6 +79,12 @@
 			has_paused_at_least_once = true
 		}
 	})
+	
+	//Used to disable instances during pausing
+	pause_modifier = active.modify().disable()
+	
+	// Called upon room start by GameCont
+	setup = new CallStack();
 #endregion
 
 #region Collision
@@ -106,6 +113,7 @@
 	
 	is_held = false;
 	is_thrown = false;
+	is_hold_persistent = false;
 	
 	on_throw_land = function() {
 		

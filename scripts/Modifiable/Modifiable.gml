@@ -92,10 +92,25 @@ function Modifiable(startingValue) constructor {
 		}
 	}
 	#endregion
-	
-	#region Modifiers
+}
+
+/// @ignore
+function __modifiable_step() {
+	static structs = [];
+	for (var i = 0; i < array_length(structs); i++) {
+		structs[i].time -= 1;
+		if structs[i].time <= 0 {
+			structs[i].modifier.clear()
+			delete structs[i]
+			array_delete(structs, i, 1)
+			i--
+		}
+	}
+}
+
+#region Modifiers
 	/// @param {Struct.Modifiable} _source
-	static Modifier = function(_source) constructor {
+	function Modifier(_source) constructor {
 		operation = OPERATIONS.PASS
 		value = undefined;
 		dirty = true;
@@ -157,18 +172,3 @@ function Modifiable(startingValue) constructor {
 		
 	}
 	#endregion
-}
-
-/// @ignore
-function __modifiable_step() {
-	static structs = [];
-	for (var i = 0; i < array_length(structs); i++) {
-		structs[i].time -= 1;
-		if structs[i].time <= 0 {
-			structs[i].modifier.clear()
-			delete structs[i]
-			array_delete(structs, i, 1)
-			i--
-		}
-	}
-}

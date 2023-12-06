@@ -30,6 +30,7 @@ if instance_exists(instance) {
 	
 	instance.is_held = is_held;
 	instance.is_thrown = is_thrown;
+	
 }
 else {
 	instance_destroy()

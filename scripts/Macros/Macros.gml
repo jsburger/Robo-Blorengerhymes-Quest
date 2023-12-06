@@ -37,3 +37,11 @@ enum EVENT {
 	CANCEL,
 	PROCEED
 }
+
+//This is just to keep track of what instances base their depth off of GameCont
+//and reorder them if need be
+enum _GC_OFFSET {
+	NONE,
+	CAPTURE,
+	TRANSITION
+}
