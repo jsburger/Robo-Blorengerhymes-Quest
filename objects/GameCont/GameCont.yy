@@ -31,7 +31,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "iconGameCont",
+    "path": "sprites/iconGameCont/iconGameCont.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

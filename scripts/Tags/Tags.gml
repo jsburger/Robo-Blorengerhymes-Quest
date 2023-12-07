@@ -1,12 +1,14 @@
 
 // Feather disable GM2043
 // Feather disable GM1041
-//global.level_starts = new TaggedObjects("LevelStart")
 global.solids = new TaggedObjects("Solid")
 //global.projectile_blockers = new TaggedObjects("StopsProjectiles")
 global.clickable_objects = new TaggedObjects("Clickable")
-//global.pausable_objects = new TaggedObjects("Pausable")
+global.pausable_objects = new TaggedObjects("Pausable")
 global.relative_to_gamecont = new TaggedObjects("GC Relative")
+global.signal_receivers = new TaggedObjects("Signal Receiver")
+global.room_loaders = new TaggedObjects("Room Load Listener")
+global.room_starters = new TaggedObjects("Room Start Listener")
 
 function TaggedObjects(_tag) constructor {
     tag = _tag;
@@ -33,6 +35,11 @@ function TaggedObjects(_tag) constructor {
 		
     }
 
+	static for_each_object = function(callback) {
+		for (var i = 0, l = array_length(contents); i < l; i++) {
+			with contents[i] callback(self)
+		}
+	}
 
 	static instances = function() {
 		var a = [];

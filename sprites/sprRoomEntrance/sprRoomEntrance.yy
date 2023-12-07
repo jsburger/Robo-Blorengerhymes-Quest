@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Robo-Blorengerhymes' Quest",
-    "path": "Robo-Blorengerhymes' Quest.yyp",
+    "name": "Technical",
+    "path": "folders/Sprites/Technical.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

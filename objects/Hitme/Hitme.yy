@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "iconHitme",
+    "path": "sprites/iconHitme/iconHitme.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

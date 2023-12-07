@@ -12,6 +12,7 @@ if !instance_exists(holder) {
 if is_held {
 	held_time += 1
 	z = holder.z + held_height
+	if instance_exists(instance) z += (instance.bbox_bottom - instance.y)
 	zspeed = 0
 	
 	if (tracks) {
@@ -24,7 +25,7 @@ if is_held {
 }
 
 if instance_exists(instance) {
-	instance.z = instance_z + z + (instance.bbox_bottom - instance.y)
+	instance.z = instance_z + z;
 	instance.x = x
 	instance.y = y
 	

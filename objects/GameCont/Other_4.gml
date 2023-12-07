@@ -6,6 +6,7 @@ for (var i = 0; i < array_length(inst); i++) {
 	inst[i].depth = GameCont.depth - inst[i].gc_offset
 }
 
+room_load()
 if last_room != -1 {
 	with RoomEntrance if target_room == other.last_room {
 		with Player {
@@ -21,6 +22,13 @@ if last_room != -1 {
 		}
 	}
 }
+
+global.room_loaders.for_each_object(function(inst) {
+	inst.on_room_load()
+})
+
+
+
 if instance_exists(Transition) {
 	pause_instances()
 }

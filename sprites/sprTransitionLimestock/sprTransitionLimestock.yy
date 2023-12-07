@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Transition Screen",
-    "path": "folders/Sprites/Misc/Transition Screen.yy",
+    "path": "folders/Sprites/Technical/Transition Screen.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -13,3 +13,5 @@ event_inherited();
 	
 	is_hold_persistent = true
 #endregion
+
+//can_serialize = true;

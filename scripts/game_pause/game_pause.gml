@@ -11,12 +11,18 @@ function game_unpause() {
 }
 
 function pause_instances() {
-	with GameObject {
-		pause_modifier.set(false);
-	}
+	global.pausable_objects.for_each_object(function(i) {
+		i.pause_modifier.set(false);
+	})
+	//with GameObject {
+	//	pause_modifier.set(false);
+	//}
 }
 function unpause_instances() {
-	with GameObject {
-		pause_modifier.disable();
-	}
+	global.pausable_objects.for_each_object(function(i) {
+		i.pause_modifier.set(true);
+	})
+	//with GameObject {
+	//	pause_modifier.disable();
+	//}
 }

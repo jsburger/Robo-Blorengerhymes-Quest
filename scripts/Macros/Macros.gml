@@ -22,6 +22,9 @@ global.Dev = false;
 
 #macro z_gravity 1
 
+#macro pausable_init active = new Modifiable(true); \
+					 pause_modifier = active.modify().disable()
+
 //Camera shorthand
 #macro camera_x camera_get_view_x(view_camera[0])
 #macro camera_y camera_get_view_y(view_camera[0])

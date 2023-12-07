@@ -1,4 +1,3 @@
-/// @returns {Id.Instance<InstanceGrabber>}
 function grab_instance(grabber, target) {
 	with instance_create_depth(target.x, target.y, target.depth, InstanceGrabber) {
 		bind(target, grabber)
