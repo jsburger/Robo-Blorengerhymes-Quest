@@ -3,7 +3,7 @@ game_object_exit
 
 #region Controls
 
-	if (can_walk) {
+	if (can_walk.get()) {
 		var _x = button_check(inputs.right) - button_check(inputs.left),
 			_y = button_check(inputs.down) - button_check(inputs.up);
 		if (_x != 0 || _y != 0) {
@@ -60,7 +60,7 @@ game_object_exit
 					set_sprite(ps.PICKUP)
 					state_change(PlayerStates.HOLDING)
 					
-					can_walk = false //Gets reset later using animation
+					walk_modifier.set(false) //Gets reset later using animation
 					speed = 0
 					action_cooldown = 2 spriteframes
 				}
@@ -81,7 +81,7 @@ game_object_exit
 			}
 		}
 		if attack_time > attack_min_charge && ((attack_time mod 15) == 0) {
-			can_walk = true
+			walk_modifier.set(true)
 			maxspeed.modify_for(15).multiply(.5)
 			if z == zmin {
 				zspeed = 3
@@ -107,7 +107,7 @@ game_object_exit
 			set_sprite(ps.HOLD)
 		}
 	}
-	if (can_walk && speed > 0) {
+	if (can_walk.get() && speed > 0) {
 		if (sprite_state == ps.IDLE) {
 			set_sprite(ps.WALK)
 		}

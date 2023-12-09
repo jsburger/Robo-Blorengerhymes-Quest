@@ -2,7 +2,7 @@
 switch (sprite_state) {
 	case (ps.PUNCH_START):
 		if !button_check(inputs.attack) {
-			can_walk = false
+			walk_modifier.set(false)
 			set_sprite(ps.PUNCH)
 			var launch = 5;
 			if attack_time > attack_min_charge {
@@ -15,7 +15,7 @@ switch (sprite_state) {
 		break
 	case(ps.PICKUP):
 		set_sprite(ps.HOLD)
-		can_walk = true
+		walk_modifier.set(true)
 		break
 	case(ps.PUNCH):
 	case(ps.THROW):

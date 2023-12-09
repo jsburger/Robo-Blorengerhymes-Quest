@@ -3,7 +3,7 @@
 event_inherited();
 #region Generic
 	set_shadow(shdPlayer)
-
+	team = TEAMS.PLAYER
 #endregion
 
 #region Movement
@@ -64,8 +64,10 @@ event_inherited();
 	
 	can_grab = true; //Can pick up and throw items
 	can_attack = true; //Can initiate attacks
-	can_walk = true; //Can control movement
+	// can_walk = true; //Can control movement, Intialized in hitme
 	can_turn = true; //Automatically updates facing to be direction
+	
+	walk_modifier = can_walk.modify().pass //Used to disable walking by abilities
 	
 	function state_change(to_state) {
 		if state != to_state {
@@ -79,27 +81,27 @@ event_inherited();
 				case(PlayerStates.IDLE):
 					can_grab = true;
 					can_attack = true;
-					can_walk = true;
+					walk_modifier.set(true);
 					can_turn = true;
 					set_sprite(ps.IDLE)
 					break
 				case(PlayerStates.KNOCKED_BACK):
 					can_grab = false;
 					can_attack = false;
-					can_walk = false;
+					walk_modifier.set(false)
 					can_turn = false;
 					set_sprite(ps.KNOCKBACK)
 					break
 				case(PlayerStates.ATTACKING):
 					can_grab = false;
 					can_attack = true;
-					can_walk = false;
+					walk_modifier.set(false)
 					can_turn = false;
 					break
 				case(PlayerStates.HOLDING):
 					can_grab = true;
 					can_attack = false;
-					can_walk = true;
+					walk_modifier.set(false)
 					can_turn = true;
 					break
 			}

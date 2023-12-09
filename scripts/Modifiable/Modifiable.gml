@@ -17,6 +17,8 @@ function Modifiable(startingValue) constructor {
 	
 	is_boolean = is_bool(startingValue);
 	
+	accumulator = function(prev, current) { return current };
+	
 	/// @pure
 	static get = function() {
 		validate()
@@ -54,6 +56,14 @@ function Modifiable(startingValue) constructor {
 		listeners.add_function(callback)
 	}
 	
+	/// Makes value only go down with modifiers
+	static accumulator_min = function() {
+		accumulator = function(prevValue, value) {
+			return min(prevValue, value)
+		}
+		return self
+	}
+	
 	#region Internals
 	static check_dirty = function() {
 		//if dirty return true;
@@ -79,7 +89,7 @@ function Modifiable(startingValue) constructor {
 		if check_dirty() {
 			var _value = value;
 			for (var i = 0; i < array_length(modifiers); i++) {
-				_value = modifiers[i].ref.apply(_value)
+				_value = accumulator(_value, modifiers[i].ref.apply(_value))
 			}
 			dirty = false;
 			out_value = _value;
@@ -109,6 +119,7 @@ function __modifiable_step() {
 }
 
 #region Modifiers
+	/// @ignore
 	/// @param {Struct.Modifiable} _source
 	function Modifier(_source) constructor {
 		operation = OPERATIONS.PASS
@@ -158,6 +169,10 @@ function __modifiable_step() {
 			return change(OPERATIONS.MULTIPLY, _value);
 		}
 		
+		static pass = function() {
+			return change(OPERATIONS.PASS, 0)
+		}
+
 		/// @desc Removes this modifier from the source
 		static clear = function() {
 			dead = true
