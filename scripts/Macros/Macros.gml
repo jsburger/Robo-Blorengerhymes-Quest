@@ -19,11 +19,17 @@ global.Dev = false;
 
 //Functions
 #macro trace show_debug_message
+#macro returnfunc function() { return
 
 #macro z_gravity 1
 
 #macro pausable_init active = new Modifiable(true); \
 					 pause_modifier = active.modify().disable()
+
+#macro serializable_init \
+	can_serialize = true \
+	should_serialize = function() { return true } \
+	serializer = new Serializer(self)
 
 //Camera shorthand
 #macro camera_x camera_get_view_x(view_camera[0])

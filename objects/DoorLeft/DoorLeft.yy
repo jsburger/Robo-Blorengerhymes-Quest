@@ -1,19 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Container",
+  "name": "DoorLeft",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Parent Objects",
-    "path": "folders/Objects/Parent Objects.yy",
+    "name": "Doors",
+    "path": "folders/Objects/Room Parts/Doors.yy",
   },
   "parentObjectId": {
-    "name": "GameObject",
-    "path": "objects/GameObject/GameObject.yy",
+    "name": "Door",
+    "path": "objects/Door/Door.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -28,12 +28,12 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"item","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"drops_once","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
-  ],
+  "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprDoorLeft",
+    "path": "sprites/sprDoorLeft/sprDoorLeft.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

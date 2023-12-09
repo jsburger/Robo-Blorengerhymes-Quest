@@ -9,6 +9,8 @@ global.relative_to_gamecont = new TaggedObjects("GC Relative")
 global.signal_receivers = new TaggedObjects("Signal Receiver")
 global.room_loaders = new TaggedObjects("Room Load Listener")
 global.room_starters = new TaggedObjects("Room Start Listener")
+global.room_completers = new TaggedObjects("Room Complete Listener")
+global.serializable_objects = new TaggedObjects("Serializable")
 
 function TaggedObjects(_tag) constructor {
     tag = _tag;

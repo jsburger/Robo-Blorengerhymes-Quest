@@ -27,6 +27,11 @@ function signal_post_emit() {
 }
 
 function signal_can_emit(signal, output_type, lastValue, emitValue) {
+	switch (signal.run_if) {
+		case(RunType.ALWAYS): break
+		case(RunType.ROOM_CLEARED): if room_is_complete() break else return false;
+		case(RunType.NOT_ROOM_CLEARED): if room_is_complete() return false else break;
+	}
 	if !is_array(output_type) output_type = [output_type]
 	for (var i = 0; i < array_length(output_type); i++) {
 		var result = outtype_resolve(signal, output_type[i], lastValue, emitValue)
@@ -39,6 +44,7 @@ function signal_can_emit(signal, output_type, lastValue, emitValue) {
 function outtype_resolve(signal, out_type, lastValue, emitValue) {
 	switch(out_type) {
 		case OutType.ONCE:
+		case OutType.ONCE_EVER:
 			return !signal.has_emitted;
 		case OutType.STEP:
 			return true;

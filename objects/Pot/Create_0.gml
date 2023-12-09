@@ -8,10 +8,9 @@ event_inherited();
 	}
 	
 	on_throw_land = function() {
+		remember_me()
 		instance_destroy()
 	}
 	
 	is_hold_persistent = true
 #endregion
-
-//can_serialize = true;

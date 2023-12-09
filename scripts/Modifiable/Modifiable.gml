@@ -138,7 +138,7 @@ function __modifiable_step() {
 			}
 			operation = _operation
 			value = _value;
-			if dirty && !dead {
+			if dirty || dead {
 				if weak_ref_alive(source) {
 					source.ref.validate()
 				}
@@ -160,8 +160,8 @@ function __modifiable_step() {
 		
 		/// @desc Removes this modifier from the source
 		static clear = function() {
-			change(OPERATIONS.PASS, 0)
 			dead = true
+			change(OPERATIONS.PASS, 0)
 			return self
 		}
 		

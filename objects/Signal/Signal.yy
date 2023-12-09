@@ -47,5 +47,8 @@
     "path": "sprites/sprSignal/sprSignal.yy",
   },
   "spriteMaskId": null,
+  "tags": [
+    "Serializable",
+  ],
   "visible": false,
 }

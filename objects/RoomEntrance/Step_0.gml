@@ -1,8 +1,9 @@
 /// @description 
+game_object_exit
 
-if !active {
+if !can_transit {
 	if !place_meeting(x, y, Player) {
-		active = true
+		can_transit = true
 	}
 }
 

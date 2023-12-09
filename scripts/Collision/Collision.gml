@@ -203,11 +203,10 @@ enum SIDE {
 	BOTTOM
 }
 
-/// @param {enum.SIDE} side
 function side_is_horizontal(side) {
 	return (side % 2) == 0
 }
-/// @param {enum.SIDE} side
+
 function side_is_vertical(side) {
 	return !side_is_horizontal(side)
 }

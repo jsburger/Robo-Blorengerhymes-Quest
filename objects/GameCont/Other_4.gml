@@ -1,4 +1,4 @@
-/// @description Correct depth after changing rooms
+/// @description Room start stuff
 layer = layer_get_id("Instances")
 
 var inst = global.relative_to_gamecont.instances()

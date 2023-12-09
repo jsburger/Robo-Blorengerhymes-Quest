@@ -126,13 +126,6 @@
 	should_serialize = function() {
 		return true
 	}
-	to_struct = function() {
-		return {
-			x,
-			y
-		}
-	}
-	from_struct = function(struct) {
-		vars_apply(struct)
-	}
+	serializer = new Serializer(self)
+	
 #endregion

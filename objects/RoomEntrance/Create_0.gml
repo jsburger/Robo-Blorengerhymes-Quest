@@ -1,5 +1,8 @@
 /// @description 
+event_inherited()
 
-active = false;
+does_wall_collision = false;
+is_visible = false;
 
-
+can_transit = false;
+transit_direction = image_angle;

@@ -37,6 +37,7 @@
   "spriteMaskId": null,
   "tags": [
     "Pausable",
+    "Serializable",
   ],
   "visible": true,
 }

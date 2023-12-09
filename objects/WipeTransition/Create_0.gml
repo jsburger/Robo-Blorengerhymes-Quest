@@ -8,6 +8,6 @@ surface = _GameCapture.get_current_surface();
 progress = 0;
 
 with RoomEntrance if target_room == other.target_room {
-	other.image_angle = round(image_angle/90) * 90
+	other.image_angle = round(transit_direction/90) * 90
 }
 

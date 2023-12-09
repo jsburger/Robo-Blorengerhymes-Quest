@@ -4,7 +4,7 @@
   "name": "iconGameObject",
   "bbox_bottom": 60,
   "bbox_left": 6,
-  "bbox_right": 57,
+  "bbox_right": 56,
   "bbox_top": 5,
   "bboxMode": 0,
   "collisionKind": 1,
