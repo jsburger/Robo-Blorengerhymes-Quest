@@ -44,6 +44,33 @@ function CollisionInfo() constructor {
 	}
 }
 
+/// Checks the collision tileset for colliding tiles
+function collision_at(type) {
+	static last_room = undefined;
+	static tilemap = undefined;
+	if (last_room != room) {
+		last_room = room
+		tilemap = layer_tilemap_get_id("Collision");
+	}
+	
+	if collision_type_needs_instance(type) {
+		if place_meeting(x, y, global.solids.contents) return true
+	}
+	if place_meeting(x, y, tilemap) {
+		var _x = bbox_left, _y = bbox_top;
+		repeat(ceil((bbox_right - bbox_left)/TileWidth)) {
+			repeat(ceil((bbox_bottom - bbox_top)/TileWidth)) {
+				if collision_type_collides_with_tile(type, tile_get_type(getTileAt(_x, _y))) return true
+				_y += TileWidth
+				_y = min(bbox_bottom, _y)
+			}
+			_x += TileWidth
+			_x = min(bbox_right, _x)
+		}
+	}
+	return false
+}
+
 /// @self GameObject
 function doWallCollision(type = COLLISIONS.LOW) {
 	#macro TileWidth 64

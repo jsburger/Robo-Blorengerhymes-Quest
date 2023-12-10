@@ -104,6 +104,7 @@
 	on_wall = function(info) {
 		return EVENT.PROCEED;
 	}
+	
 #endregion
 
 #region Grabbing

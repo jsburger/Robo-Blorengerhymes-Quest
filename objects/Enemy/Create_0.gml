@@ -17,8 +17,9 @@ event_inherited();
 		vars_apply(sprite_struct) // I'll add directional filters later
 		spr_draw = spr_idle
 	}
-	function set_sprite(spr) {
-		if spr_draw != spr {
+	function set_sprite(spr, force = false) {
+		if spr == undefined exit
+		if (spr_draw != spr || force) {
 			spr_draw = spr
 			image_index = 0
 		}
@@ -36,4 +37,31 @@ event_inherited();
 		}
 	}
 	
+	/// Given spr_draw, can spr_hurt replace this animation?
+	hurt_can_override = function(sprite) {
+		switch (sprite) {
+			case spr_idle:
+			case spr_walk:
+			case spr_hurt:
+				return true;
+			default:
+				return false;
+		}
+	}
+	
+	on_hurt = function(source) {
+		if hurt_can_override(spr_draw) && spr_hurt != undefined {
+			set_sprite(spr_hurt, true)
+		}
+	}
+	
+#endregion
+
+#region Behavior
+	maxspeed = new Modifiable(4);
+	acceleration = .5;
+	friction = .3;
+	
+	chase_time = 0;
+
 #endregion

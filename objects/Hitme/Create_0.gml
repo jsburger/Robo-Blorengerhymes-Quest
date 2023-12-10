@@ -12,28 +12,43 @@ team = TEAMS.NONE
 hp = 1;
 maxhp = 1;
 iframes = 0;
+iframe_count = 10;
+
+function hitme_init(_hp) {
+	maxhp = _hp
+	hp = maxhp
+}
 
 can_walk = new Modifiable(true).accumulator_min()
 
 knockback = {
 	direction: 0,
-	force: 0,
-	resist: 0,
-	is_strong: false,
-	walk_modifier: can_walk.modify().pass(),
+	speed: 0,
+	resist: 0
 	
 }
-knockback_apply = function(dir, spd, strong) {
-	if knockback.is_strong && !strong exit
+knockback_apply = function(dir, spd) {
 	knockback.speed = max(spd * (1 - knockback.resist), knockback.speed);
 	knockback.direction = dir;
-	knockback.is_strong = strong
-	if knockback.is_strong knockback.walk_modifier.set(false)
 }
 knockback_step = function() {
-	
+	if knockback.speed > 0 {
+		var _x = lengthdir_x(knockback.speed, knockback.direction),
+			_y = lengthdir_y(knockback.speed, knockback.direction);
+		x += _x
+		y += _y
+		if collision_at(wall_collision_type) {
+			knockback.speed = 0
+			x -= _x
+			y -= _y
+			exit
+		}
+		knockback.speed = max(knockback.speed - .2, 0)
+	}
 }
 
+can_hit = true;
+contact_damage = 0;
 
 can_projectile_hurt_me = function(proj) {
 	return true

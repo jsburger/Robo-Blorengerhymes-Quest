@@ -27,6 +27,16 @@ event_inherited();
 	carry_height = 40;
 #endregion
 
+#region Combat
+	hitme_init(4)
+	contact_damage = 0;
+	
+	attack_damage = 1;
+	attack_force = 4;
+	attack_rebound = 4; //Knockback received after hitting something, pushes robo backwards
+	attack_mask = mskPlayerPunch
+#endregion
+
 #region Sprites
 	sprite_state = ps.IDLE;
 	facing = direction;
