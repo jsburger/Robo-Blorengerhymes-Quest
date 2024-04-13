@@ -125,3 +125,4 @@ repeat(_amount){
 }
 disable_fog()
 shader_reset();
+//draw_surface(shadow_surf, 0, 0)

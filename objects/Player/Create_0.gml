@@ -27,6 +27,34 @@ event_inherited();
 	carry_height = 40;
 #endregion
 
+#region Pushing Blocks
+	push_time = 0
+	push_cancel = 0;
+	push_time_max = 20
+	
+	/// @param {Struct.CollisionInfo} info
+	on_wall = function(info) {
+		if info.is_instance {
+			if instance_is(info.instance, PushBlock) {
+				if (side_is_horizontal(info.side) && abs(hspeed) > abs(vspeed))
+					|| (side_is_vertical(info.side) && abs(vspeed) > abs(hspeed)) {
+					push_cancel = 5;
+					push_time += 1;
+					if push_time >= push_time_max {
+						var p = info.instance.try_push(info.side)
+						if p {
+							push_time = 0
+							return EVENT.PROCEED
+						}
+					}
+					return EVENT.CANCEL //Prevents collision from stopping player
+				}
+			}
+		}
+		return EVENT.PROCEED
+	}
+#endregion
+
 #region Combat
 	hitme_init(4)
 	contact_damage = 0;

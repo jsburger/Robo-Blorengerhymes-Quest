@@ -17,6 +17,7 @@ void main()
 		discard;
 	}
 	
+
 	if (Flashing > 0) {
 		col = (any(greaterThan(col.rgb, vec3(0.0, 0.0, 0.0)))) ? vec4(1.0, 1.0, 1.0, 1.0) : col;
 	}

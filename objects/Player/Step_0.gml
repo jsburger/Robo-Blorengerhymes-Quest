@@ -97,6 +97,14 @@ game_object_exit
 
 #endregion
 
+#region Push logic
+	if push_cancel > 0 {
+		push_cancel -= 1;
+		if push_cancel <= 0 {
+			push_time = 0
+		}
+	}
+#endregion
 
 #region Control sprite, this should probably go last
 	if (speed == 0) {

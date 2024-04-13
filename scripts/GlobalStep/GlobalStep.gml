@@ -16,14 +16,14 @@ draw_set_valign(fa_middle)
 draw_set_font(Limestock)
 
 
+
 //Runs every frame that the game isn't paused.
 function game_step() {
 	global.CurrentFrame += 1
 	__modifiable_step()
 	
-	if button_pressed(inputs.talk) {
-		instance_create(0, 0, RoomTransition)
-	}
+	__time_step()
+	
 }
 //Runs every frame.
 function global_step() {

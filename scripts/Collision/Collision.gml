@@ -243,6 +243,10 @@ function side_get_direction(side) {
 	return dirs[side]
 }
 
+function side_get_opposite(side) {
+	return (side + 2) mod 4
+}
+
 #endregion
 #region Tile stuff
 function getTileAt(x, y) {

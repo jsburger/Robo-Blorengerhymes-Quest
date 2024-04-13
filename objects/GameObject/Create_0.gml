@@ -10,8 +10,9 @@
 #endregion
 
 #region Depth Sorting
+	
+	is_visible = visible; //Custom replacement for visible
 	visible = false;
-	is_visible = true; //Custom replacement for visible
 
 	get_depth = function(Inst = self){
 		return Inst.y + Inst.z -(Inst.zlayer * 100);
@@ -116,14 +117,14 @@
 	is_thrown = false;
 	is_hold_persistent = false;
 	
-	on_throw_land = function() {
-		
-	}
+	on_throw_land = function() { }
 #endregion
 
 #region Serialization
+	/// If the object can save variables when room is exited in general
 	can_serialize = false
 	
+	/// Override this to make serialization dynamic. You can always use remember_me() to force saving
 	should_serialize = function() {
 		return true
 	}

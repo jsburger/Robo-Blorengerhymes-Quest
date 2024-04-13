@@ -38,3 +38,30 @@ finish_transition = function() {
 	global.room_starters.for_each_object(function(i) {i.on_room_start()})
 	with GameObject setup.call();
 }
+
+cam_width = 800
+cam_height = 600
+
+cam_setup = function() {
+	camera_destroy(view_camera[0])
+	view_enabled = true;
+	view_visible[0] = true;
+	room_set_viewport(room, 0, true, 0, 0, cam_width, cam_height)
+	view_camera[0] = camera_create_view(
+		0, 0,
+		cam_width, cam_height,
+		0, Player,
+		-1, -1,
+		cam_width/2,
+		cam_height/2
+	)
+	window_set_size(cam_width, cam_height)
+	window_center()
+	
+	//view_set_camera(0, view_camera[0])
+	//camera_set_view_size(view_camera[0], cam_width, cam_height)
+	//display_set_gui_size(cam_width, cam_height)
+	surface_resize(application_surface, cam_width, cam_height)
+}
+
+cam_setup()

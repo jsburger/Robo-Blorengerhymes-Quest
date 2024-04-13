@@ -14,6 +14,7 @@ global.Dev = false;
 
 // Time
 #macro sec * 60
+#macro minutes * 60 sec
 // 10 sprite fps * 60 fps = 6 frames per sprite frame
 #macro spriteframes * 6
 

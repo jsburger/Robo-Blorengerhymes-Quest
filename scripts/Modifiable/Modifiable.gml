@@ -33,6 +33,7 @@ function Modifiable(startingValue) constructor {
 	}
 	
 	/// @pure
+	/// @returns {Struct.Modifier}
 	static modify = function() {
 		dirty = true;
 		var _modifier = new Modifier(self);

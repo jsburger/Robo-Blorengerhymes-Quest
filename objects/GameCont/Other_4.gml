@@ -6,6 +6,8 @@ for (var i = 0; i < array_length(inst); i++) {
 	inst[i].depth = GameCont.depth - inst[i].gc_offset
 }
 
+cam_setup()
+
 room_load()
 if last_room != -1 {
 	with RoomEntrance if target_room == other.last_room {

@@ -29,6 +29,7 @@ function __createShadowSpace() {
 // Instances will draw above shadows of their layer, and draw shadows at their layer
 // So an instance at ACTOR will emit shadows below ACTOR and above FLOOR
 enum SHADOWMASK {
+	MIN,
 	FLOOR,
 	ACTOR,
 	WALL,
@@ -56,8 +57,8 @@ function set_flash(value) {
 /// @param {Enum.SHADOWMASK} masklevel
 function draw_set_shadow_mask(masklevel) {
 	static lastMask = undefined;
-	static uniform = shader_get_uniform(shaderInstanceShadows, "ShadowMaskValue");
-	if (masklevel != lastMask) {
+	var uniform = shader_get_uniform(shaderInstanceShadows, "ShadowMaskValue");
+	if (masklevel != lastMask) or true {
 		shader_set_uniform_f(uniform, get_shadow_mask_value(masklevel))
 		lastMask = masklevel
 	}
