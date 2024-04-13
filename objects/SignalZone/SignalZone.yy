@@ -1,46 +1,48 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "SignalZone",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  "$GMObject":"",
+  "%Name":"SignalZone",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
-  "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"Signal","path":"objects/Signal/Signal.yy",},"propertyId":{"name":"output_type","path":"objects/Signal/Signal.yy",},"value":"OutType.ON_CHANGE, OutType.WHEN_TRUE",},
+  "managed":true,
+  "name":"SignalZone",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"Signal","path":"objects/Signal/Signal.yy",},"propertyId":{"name":"output_type","path":"objects/Signal/Signal.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"OutType.ON_CHANGE, OutType.WHEN_TRUE",},
   ],
-  "parent": {
-    "name": "Signals",
-    "path": "folders/Objects/Room Parts/Signals.yy",
+  "parent":{
+    "name":"Signals",
+    "path":"folders/Objects/Room Parts/Signals.yy",
   },
-  "parentObjectId": {
-    "name": "Signal",
-    "path": "objects/Signal/Signal.yy",
+  "parentObjectId":{
+    "name":"Signal",
+    "path":"objects/Signal/Signal.yy",
   },
-  "persistent": false,
-  "physicsAngularDamping": 0.1,
-  "physicsDensity": 0.5,
-  "physicsFriction": 0.2,
-  "physicsGroup": 1,
-  "physicsKinematic": false,
-  "physicsLinearDamping": 0.1,
-  "physicsObject": false,
-  "physicsRestitution": 0.1,
-  "physicsSensor": false,
-  "physicsShape": 1,
-  "physicsShapePoints": [],
-  "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"search_object","filters":[
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"search_object","filters":[
         "GMObject",
-      ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"GameObject","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"search_object","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"GameObject","varType":5,},
   ],
-  "solid": false,
-  "spriteId": {
-    "name": "sprSignalZone",
-    "path": "sprites/sprSignalZone/sprSignalZone.yy",
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"sprSignalZone",
+    "path":"sprites/sprSignalZone/sprSignalZone.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
+  "spriteMaskId":null,
+  "visible":true,
 }

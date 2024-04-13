@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Macros",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Systems",
-    "path": "folders/Scripts/Systems.yy",
+  "$GMScript":"",
+  "%Name":"Macros",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Macros",
+  "parent":{
+    "name":"Systems",
+    "path":"folders/Scripts/Systems.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

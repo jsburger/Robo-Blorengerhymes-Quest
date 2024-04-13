@@ -1,10 +1,12 @@
 {
-  "resourceType": "GMShader",
-  "resourceVersion": "1.0",
-  "name": "shaderShadowSpaceGenerate",
-  "parent": {
-    "name": "Shadows",
-    "path": "folders/Shadows.yy",
+  "$GMShader":"",
+  "%Name":"shaderShadowSpaceGenerate",
+  "name":"shaderShadowSpaceGenerate",
+  "parent":{
+    "name":"Shadows",
+    "path":"folders/Shadows.yy",
   },
-  "type": 1,
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }

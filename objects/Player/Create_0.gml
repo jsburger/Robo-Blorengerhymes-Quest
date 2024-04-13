@@ -77,7 +77,7 @@ event_inherited();
 	// can_walk = true; //Can control movement, Intialized in hitme
 	can_turn = true; //Automatically updates facing to be direction
 	
-	walk_modifier = can_walk.modify().pass //Used to disable walking by abilities
+	walk_modifier = can_walk.modify().pass() //Used to disable walking by abilities
 	
 	function state_change(to_state) {
 		if state != to_state {

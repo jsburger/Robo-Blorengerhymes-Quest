@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Modifiable",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Classes",
-    "path": "folders/Scripts/Classes.yy",
+  "$GMScript":"",
+  "%Name":"Modifiable",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Modifiable",
+  "parent":{
+    "name":"Classes",
+    "path":"folders/Scripts/Classes.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

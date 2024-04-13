@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Shadows",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Shadows",
-    "path": "folders/Shadows.yy",
+  "$GMScript":"",
+  "%Name":"Shadows",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Shadows",
+  "parent":{
+    "name":"Shadows",
+    "path":"folders/Shadows.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
