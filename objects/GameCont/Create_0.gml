@@ -60,7 +60,7 @@ cam_setup = function() {
 	
 	//view_set_camera(0, view_camera[0])
 	//camera_set_view_size(view_camera[0], cam_width, cam_height)
-	//display_set_gui_size(cam_width, cam_height)
+	display_set_gui_size(cam_width, cam_height)
 	surface_resize(application_surface, cam_width, cam_height)
 }
 

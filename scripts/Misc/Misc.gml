@@ -162,7 +162,7 @@ function draw_outline(SpriteIndex, ImageIndex, X, Y, OutlineWidth, OutlineColor)
 
 // Use this if you dont care about draw order:
 function instance_create(X, Y, Object){
-	return instance_create_depth(X, Y, 0, Object);
+	return instance_create_layer(X, Y, "Instances", Object);
 }
 
 // Pluralizes a string:

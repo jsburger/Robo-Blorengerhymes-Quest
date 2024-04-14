@@ -2,22 +2,15 @@
 enum PlayerSprite {
 	IDLE,
 	WALK,
-	HOLD,
-	HOLD_WALK,
-	PUNCH_START,
-	PUNCH,
-	HURT,
-	KNOCKBACK,
-	PICKUP,
-	THROW,
+	INTERACT,
 	
 	_MAX
 }
 #macro ps PlayerSprite
 enum SPRITETYPE {
-	FULL,
-	HALF,
-	SINGLE
+	FULL, //8 direction
+	HALF, //5 direction w/flip
+	SINGLE //1 w/flip
 }
 #macro ST SPRITETYPE
 
@@ -37,16 +30,9 @@ function load_directional_sprite_array(spritename, sprite_type) {
 	return array
 }
 
-_register_player_sprite(ps.IDLE, ST.HALF, "Idle")
-_register_player_sprite(ps.WALK, ST.HALF, "Walk")
-_register_player_sprite(ps.HOLD, ST.FULL, "Hold")
-_register_player_sprite(ps.HOLD_WALK, ST.FULL, "HoldWalk")
-_register_player_sprite(ps.PUNCH_START, ST.HALF, "PunchStart")
-_register_player_sprite(ps.PUNCH, ST.HALF, "Punch")
-_register_player_sprite(ps.HURT, ST.SINGLE, "Hurt")
-_register_player_sprite(ps.KNOCKBACK, ST.HALF, "Knockback")
-_register_player_sprite(ps.PICKUP, ST.SINGLE, "Pickup")
-_register_player_sprite(ps.THROW, ST.FULL, "Throw")
+_register_player_sprite(ps.IDLE, ST.SINGLE, "NewIdle")
+_register_player_sprite(ps.WALK, ST.SINGLE, "NewWalk")
+_register_player_sprite(ps.INTERACT, ST.SINGLE, "NewAction")
 
 function directional_sprite_index(dir, sprite_type) {
 	switch sprite_type {

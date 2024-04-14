@@ -14,10 +14,10 @@ enum inputs {
 	down,
 	left,
 	right,
-	attack, //Punch
+	//attack, //Punch
 	pickup, //Pick up or throw
 	item,   //Use item (like from inventory)
-	talk,   //Talk to NPCs or use Signs
+	interact,   //Talk to NPCs or use Signs
 	pause,
 	mouse_left,
 	mouse_right,
@@ -28,7 +28,7 @@ enum inputs {
 
 function getInput(inputName, inputType) {
 	
-	//if instance_exists(objTextPrompt) return false
+	if instance_exists(Textbox) && !instance_is(self, Textbox) && Textbox.blocking return false
 	
 	var keys = [];
 
@@ -46,7 +46,7 @@ function getInput(inputName, inputType) {
 			keys = ["A", vk_left]
 			break
 			
-		case (inputs.attack):
+		case (inputs.interact):
 		case (inputs.proceed):
 			keys = ["I", "Z"]
 			break
@@ -58,9 +58,6 @@ function getInput(inputName, inputType) {
 			break
 		case(inputs.back):
 			keys = ["O", "X"]
-			break
-		case(inputs.talk):
-			keys = ["K", "V"]
 			break
 		
 		case (inputs.pause):

@@ -16,6 +16,7 @@
     {"name":"inst_2979F294","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_477DAF43","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_41999893","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_616ACBC9","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -32,6 +33,7 @@
         {"$GMRInstance":"","%Name":"inst_2979F294","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":2,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2979F294","objectId":{"name":"AlanBlock","path":"objects/AlanBlock/AlanBlock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":512.0,},
         {"$GMRInstance":"","%Name":"inst_477DAF43","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_477DAF43","objectId":{"name":"AlanBlock","path":"objects/AlanBlock/AlanBlock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":384.0,},
         {"$GMRInstance":"","%Name":"inst_41999893","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41999893","objectId":{"name":"AlanSpawner","path":"objects/AlanSpawner/AlanSpawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1152.0,"y":544.0,},
+        {"$GMRInstance":"","%Name":"inst_616ACBC9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_616ACBC9","objectId":{"name":"NpcFish","path":"objects/NpcFish/NpcFish.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":256.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Collision","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":22,"TileCompressedData":[
           -5,-2147483648,-8,5,-9,0,-4,-2147483648,-10,5,-8,0,-4,-2147483648,-5,5,-3,0,-3,5,-7,0,-7,-2147483648,

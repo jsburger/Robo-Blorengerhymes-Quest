@@ -52,6 +52,7 @@ enum EVENT {
 //and reorder them if need be
 enum _GC_OFFSET {
 	NONE,
+	TEXT,
 	CAPTURE,
 	TRANSITION
 }

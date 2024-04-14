@@ -37,9 +37,10 @@ if found {
 		pushable = false
 	}
 	for(var i = 0; i < array_length(sorted); i++) {
-		schedule(1 + i * 12, function(_x, _y) {
-			instance_create_layer(_x, _y, layer, Effect, {sprite_index: sprBang})
-		}, [sorted[i].x, sorted[i].y])
+		schedule(1 + i * 12, function(inst) {
+			instance_create_layer(inst.x, inst.y, layer, Effect, {sprite_index: sprBang})
+			inst.flash = 8
+		}, [sorted[i]])
 	}
 		
 }

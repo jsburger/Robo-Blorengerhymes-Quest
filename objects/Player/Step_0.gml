@@ -13,27 +13,27 @@ game_object_exit
 	
 	speed = clamp(speed, -maxspeed.get(), maxspeed.get())
 	
-	if button_pressed(inputs.attack) {
-		attack_buffer = attack_buffer_max
-	}
-	else {
-		if attack_buffer > 0 {
-			attack_buffer -= 1;
-		}
-	}
+	//if button_pressed(inputs.attack) {
+	//	attack_buffer = attack_buffer_max
+	//}
+	//else {
+	//	if attack_buffer > 0 {
+	//		attack_buffer -= 1;
+	//	}
+	//}
 	
 	if (action_cooldown <= 0) {
 		// Attack
-		if (can_attack && attack_buffer > 0) {
-			state_change(PlayerStates.ATTACKING)
-			set_sprite(ps.PUNCH_START)
-			action_cooldown = 10
-		}
+		//if (can_attack && attack_buffer > 0) {
+		//	state_change(PlayerStates.ATTACKING)
+		//	set_sprite(ps.PUNCH_START)
+		//	action_cooldown = 10
+		//}
 		// Grabbing and Throwing
 		if (can_grab && button_pressed(inputs.pickup)) {
 			// Throw instance
 			if instance_exists(grabbed_instance) {
-				set_sprite(ps.THROW)
+				//set_sprite(ps.THROW)
 				//Throw instance
 				with grab_instance_throw(self, grabbed_instance) {
 					motion_add(other.facing, other.thrown_object_speed)
@@ -57,14 +57,40 @@ game_object_exit
 				if instance_exists(target) {
 					grabbed_instance = grab_instance(self, target)
 					grabbed_instance.held_height_max = carry_height
-					set_sprite(ps.PICKUP)
-					state_change(PlayerStates.HOLDING)
+					//set_sprite(ps.PICKUP)
+					//state_change(PlayerStates.HOLDING)
 					
-					walk_modifier.set(false) //Gets reset later using animation
+					//walk_modifier.set(false) //Gets reset later using animation
 					speed = 0
 					action_cooldown = 2 spriteframes
 				}
 				
+			}
+			
+		}
+		if (can_interact) {
+			var interactables = array_filter(instance_place_mask_list(mskInteract, x, y, Interactable, facing),
+				function (inst) {
+					return inst.interactable && inst.can_interact()
+				});
+			var target = noone;
+			if array_length(interactables) > 0 {
+				target = array_least_mapped(interactables,
+					function(inst) {
+						return point_distance(x, y, inst.x, inst.y)
+					})
+			}
+			if instance_exists(target) {
+				has_interaction = true;
+				if button_pressed(inputs.interact) {
+					state_change(PlayerStates.INTERACTING)
+					speed = 0
+					target.on_interact()
+					action_cooldown = 4 spriteframes
+				}
+			}
+			else {
+				has_interaction = false;
 			}
 			
 		}
@@ -73,27 +99,29 @@ game_object_exit
 		action_cooldown -= 1
 	}
 	
-	if (state == PlayerStates.ATTACKING) {
-		attack_time += 1
-		if attack_time > attack_startup && !button_check(inputs.attack) {
-			if sprite_state == ps.PUNCH_START {
-				image_index = image_number
-			}
-		}
-		if attack_time > attack_min_charge && ((attack_time mod 15) == 0) {
-			walk_modifier.set(true)
-			maxspeed.modify_for(15).multiply(.5)
-			if z == zmin {
-				zspeed = 3
-			}
-		}
-	}
+	#region Old
+	//if (state == PlayerStates.ATTACKING) {
+	//	attack_time += 1
+	//	if attack_time > attack_startup && !button_check(inputs.attack) {
+	//		if sprite_state == ps.PUNCH_START {
+	//			image_index = image_number
+	//		}
+	//	}
+	//	if attack_time > attack_min_charge && ((attack_time mod 15) == 0) {
+	//		walk_modifier.set(true)
+	//		maxspeed.modify_for(15).multiply(.5)
+	//		if z == zmin {
+	//			zspeed = 3
+	//		}
+	//	}
+	//}
 	
-	if (state == PlayerStates.HOLDING && sprite_state != ps.THROW) {
-		if !instance_exists(grabbed_instance) {
-			state_change(PlayerStates.IDLE)
-		}
-	}
+	//if (state == PlayerStates.HOLDING && sprite_state != ps.THROW) {
+	//	if !instance_exists(grabbed_instance) {
+	//		state_change(PlayerStates.IDLE)
+	//	}
+	//}
+	#endregion
 
 #endregion
 
@@ -111,17 +139,17 @@ game_object_exit
 		if (sprite_state == ps.WALK) {
 			set_sprite(ps.IDLE)
 		}
-		else if (sprite_state == ps.HOLD_WALK) {
-			set_sprite(ps.HOLD)
-		}
+		//else if (sprite_state == ps.HOLD_WALK) {
+		//	set_sprite(ps.HOLD)
+		//}
 	}
 	if (can_walk.get() && speed > 0) {
 		if (sprite_state == ps.IDLE) {
 			set_sprite(ps.WALK)
 		}
-		else if (sprite_state == ps.HOLD) {
-			set_sprite(ps.HOLD_WALK)
-		}
+		//else if (sprite_state == ps.HOLD) {
+		//	set_sprite(ps.HOLD_WALK)
+		//}
 	}
 	update_sprite()
 	

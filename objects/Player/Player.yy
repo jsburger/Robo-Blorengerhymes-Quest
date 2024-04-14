@@ -14,8 +14,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"Hitme",
-    "path":"objects/Hitme/Hitme.yy",
+    "name":"GameObject",
+    "path":"objects/GameObject/GameObject.yy",
   },
   "persistent":true,
   "physicsAngularDamping":0.1,
@@ -35,12 +35,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"mskPlayer",
-    "path":"sprites/mskPlayer/mskPlayer.yy",
+    "name":"mskPlayerNew",
+    "path":"sprites/mskPlayerNew/mskPlayerNew.yy",
   },
   "spriteMaskId":{
-    "name":"mskPlayer",
-    "path":"sprites/mskPlayer/mskPlayer.yy",
+    "name":"mskPlayerNew",
+    "path":"sprites/mskPlayerNew/mskPlayerNew.yy",
   },
   "visible":true,
 }

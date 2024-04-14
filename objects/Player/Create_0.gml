@@ -2,8 +2,7 @@
 // Inherit the parent event
 event_inherited();
 #region Generic
-	set_shadow(shdPlayer)
-	team = TEAMS.PLAYER
+	set_shadow(shdPlayer, 0, 12)
 #endregion
 
 #region Movement
@@ -44,6 +43,7 @@ event_inherited();
 						var p = info.instance.try_push(info.side)
 						if p {
 							push_time = 0
+							state_change(PlayerStates.INTERACTING)
 							return EVENT.PROCEED
 						}
 					}
@@ -55,15 +55,6 @@ event_inherited();
 	}
 #endregion
 
-#region Combat
-	hitme_init(4)
-	contact_damage = 0;
-	
-	attack_damage = 1;
-	attack_force = 4;
-	attack_rebound = 4; //Knockback received after hitting something, pushes robo backwards
-	attack_mask = mskPlayerPunch
-#endregion
 
 #region Sprites
 	sprite_state = ps.IDLE;
@@ -94,15 +85,14 @@ event_inherited();
 #region State Machine
 	enum PlayerStates {
 		IDLE,
-		KNOCKED_BACK,
-		ATTACKING,
-		HOLDING
+		INTERACTING
 	}
 	state = PlayerStates.IDLE;
 	
 	can_grab = true; //Can pick up and throw items
-	can_attack = true; //Can initiate attacks
-	// can_walk = true; //Can control movement, Intialized in hitme
+	can_interact = true; //Can talk to NPCs and use props
+	has_interaction = false;
+	can_walk = new Modifiable(true).accumulator_min() //Can control movement
 	can_turn = true; //Automatically updates facing to be direction
 	
 	walk_modifier = can_walk.modify().pass() //Used to disable walking by abilities
@@ -117,30 +107,17 @@ event_inherited();
 		state_enter = function(state) {
 			switch state {
 				case(PlayerStates.IDLE):
+					can_interact = true;
 					can_grab = true;
-					can_attack = true;
 					walk_modifier.set(true);
 					can_turn = true;
 					set_sprite(ps.IDLE)
 					break
-				case(PlayerStates.KNOCKED_BACK):
-					can_grab = false;
-					can_attack = false;
-					walk_modifier.set(false)
+				case(PlayerStates.INTERACTING):
+					can_interact = false;
 					can_turn = false;
-					set_sprite(ps.KNOCKBACK)
-					break
-				case(PlayerStates.ATTACKING):
-					can_grab = false;
-					can_attack = true;
 					walk_modifier.set(false)
-					can_turn = false;
-					break
-				case(PlayerStates.HOLDING):
-					can_grab = true;
-					can_attack = false;
-					walk_modifier.set(false)
-					can_turn = true;
+					set_sprite(ps.INTERACT)
 					break
 			}
 			self.state = state
@@ -149,13 +126,7 @@ event_inherited();
 			switch state {
 				case(PlayerStates.IDLE):
 					break
-				case(PlayerStates.KNOCKED_BACK):
-					break
-				case(PlayerStates.ATTACKING):
-					attack_time = 0
-					break
-				case(PlayerStates.HOLDING):
-				//if holding something, drop it
+				case(PlayerStates.INTERACTING):
 					break
 			}
 		}

@@ -8,8 +8,8 @@
   "name":"IdleGameObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Misc",
+    "path":"folders/Objects/Misc.yy",
   },
   "parentObjectId":{
     "name":"GameObject",
