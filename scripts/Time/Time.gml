@@ -1,5 +1,5 @@
 global.time = 0;
-global.time_max = 6 minutes
+global.time_max = 6 minutes;
 
 global.time_pause = 0;
 

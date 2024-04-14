@@ -36,8 +36,8 @@
   ],
   "name":"Room2",
   "parent":{
-    "name":"Robo-Blorengerhymes' Quest",
-    "path":"Robo-Blorengerhymes' Quest.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
