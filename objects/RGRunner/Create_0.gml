@@ -4,7 +4,7 @@
 event_inherited();
 
 is_player = false;
-run_speed = 1.5;
+run_speed = .5;
 flip = -1
 image_speed = 0
 running = false;

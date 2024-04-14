@@ -1,6 +1,11 @@
 global._roomcache = new Cache();
 global._extradata = [];
 
+add_reset_hook(function() {
+	global._roomcache = new Cache();
+	global._extradata = [];
+})
+
 function room_save() {
 	var cache = global._roomcache;
 	var save = [];

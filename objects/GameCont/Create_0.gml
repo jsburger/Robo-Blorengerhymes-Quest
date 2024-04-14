@@ -21,6 +21,8 @@ restore_point = -1;
 last_room = -1;
 restore_room = -1;
 
+has_centered_window = false
+
 change_room = function(target_room) {
 	if target_room != room {
 		if !restoring {
@@ -56,10 +58,10 @@ cam_setup = function() {
 		cam_height/2
 	)
 	window_set_size(cam_width, cam_height)
-	window_center()
-	
-	//view_set_camera(0, view_camera[0])
-	//camera_set_view_size(view_camera[0], cam_width, cam_height)
+	if !has_centered_window {
+		window_center()
+		has_centered_window = true
+	}
 	display_set_gui_size(cam_width, cam_height)
 	surface_resize(application_surface, cam_width, cam_height)
 }

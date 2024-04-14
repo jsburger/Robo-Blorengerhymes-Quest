@@ -7,4 +7,5 @@ with NpcBibby bibby = self
 say_text_nonblocking(bibby, 1 sec, "Red light!", function() {
 	go_green()
 	alarm[0] = redlight_time()
+	say_text_nonblocking(noone, .5 sec, "Green light!")
 })

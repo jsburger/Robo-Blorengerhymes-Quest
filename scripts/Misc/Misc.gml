@@ -140,6 +140,14 @@ function draw_rectangle_simple_wh(x1, y1, width, height, color = c_white, alpha 
 	draw_rectangle_simple(x1, y1, x1 + width, y1 + height, color, alpha)
 }
 
+function draw_text_simple(_x, _y, text, color, alpha = 1) {
+	draw_text_color(_x, _y, text, color, color, color, color, alpha)
+}
+
+function draw_text_ext_simple(_x, _y, text, sep, width, color, alpha = 1) {
+	draw_text_ext_color(_x, _y, text, sep, width, color, color, color, color, alpha)
+}
+
 /// Draw_sprite_ext but with color and alpha
 function draw_sprite_color(sprite, index, _x, _y, color, alpha = 1) {
 	draw_sprite_ext(sprite, index, _x, _y, 1, 1, 0, color, alpha)
