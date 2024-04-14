@@ -34,7 +34,10 @@ function global_step() {
 	if !instance_exists(_GameCapture) {
 		instance_create_layer(0, 0, "Instances", _GameCapture)
 	}
-
+	
+	if instance_exists(Player) && !instance_exists(InventoryDisplay) {
+		instance_create(camera_width - 128, 128, InventoryDisplay)
+	}
 
 	if (global.music_follower != -1 && (global.sound_music != -1) && !audio_is_playing(global.sound_music)) {
 		sound_play_music(global.music_follower, -1)
