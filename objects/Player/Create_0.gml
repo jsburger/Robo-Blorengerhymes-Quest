@@ -85,7 +85,8 @@ event_inherited();
 #region State Machine
 	enum PlayerStates {
 		IDLE,
-		INTERACTING
+		INTERACTING,
+		GRINNING
 	}
 	state = PlayerStates.IDLE;
 	
@@ -118,6 +119,12 @@ event_inherited();
 					can_turn = false;
 					walk_modifier.set(false)
 					set_sprite(ps.INTERACT)
+					break
+				case(PlayerStates.GRINNING):
+					can_interact = false;
+					can_turn = false;
+					walk_modifier.set(false)
+					set_sprite(ps.GRIN)
 					break
 			}
 			self.state = state

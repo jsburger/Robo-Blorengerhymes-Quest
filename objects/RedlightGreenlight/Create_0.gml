@@ -4,11 +4,10 @@ gc_offset = _GC_OFFSET.TRANSITION
 depth = GameCont.depth - gc_offset
 
 is_green = true;
+rage = 0;
 
-fade_progress = 0
-fading = false
-starting = true;
-ending = false
+is_active = false;
+player_won = false;
 player_pauser = undefined;
 player_x = 0;
 player_y = 0;
@@ -36,22 +35,70 @@ go_red = function() {
 		if !is_player {
 			stop_running()
 		}
-		else {
-			
-		}
 	}
 }
 
 start_game = function() {
-	fading = true
-	starting = true
-	
+	player_won = false
+	is_active = true
+	with Player {
+		other.player_pauser = active.modify().set(false)
+	}
+	fade_then(function() {
+		with Player {
+			is_visible = false;
+			other.player_x = x
+			other.player_y = y;
+			x = (other.x + NpcBibby.x)/2
+			y = other.y 
+		}
+			
+		var m = 64;
+		with instance_create(x, y - m, RGRunner) {
+			is_player = true;
+			can_run = false
+			sprite_index = sprPlayerNewWalk1
+			set_shadow(shdPlayer, 0, 12)
+		}
+		with instance_create(x, y + m, RGRunner) {
+			image_alpha = 0
+			stop_running()
+		}
+		
+		schedule(1 sec, function() {
+			start_race()
+		})
+	})
+}
+
+start_race = function() {
+	alarm[0] = redlight_time()
+	var bibby;
+	rage = 0
+	with RGRunner can_run = true
+	with NpcBibby bibby = self
+	say_text_nonblocking(bibby, .5 sec, "Go!")
+	go_green()
 }
 
 end_game = function() {
-	fading = true
-	starting = false
-	ending = true
+
+	fade_then(function() {
+		is_active = false
+		if player_pauser != undefined {
+			player_pauser.clear()
+		}
+		with Player {
+			x = other.player_x
+			y = other.player_y
+			is_visible = true
+		}
+		if player_won {
+			player_won = false
+			with DanzoSpawner spawn()
+		}
+		with RGRunner instance_destroy()
+	})
 }
 
 redlight_time = function() {
@@ -74,6 +121,7 @@ i_won = function(runner) {
 	var bibby;
 	with NpcBibby bibby = self
 	if runner.is_player {
+		player_won = true
 		say_text(bibby, ["You caught me!"], function() {
 			end_game()
 		})

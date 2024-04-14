@@ -15,6 +15,16 @@ function register_animal(animal, name, sprite, hint, desc) {
 	}
 }
 
+function animal_get(animal) {
+	return global._animals[animal]
+}
+
+function animal_should_spawn(animal) {
+	with Animal if self.animal == animal return false;
+	if animal_found(animal) return false;
+	return true;
+}
+
 enum ANIMALS {
 	ALAN,
 	DANZO,

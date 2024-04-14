@@ -3,6 +3,7 @@ enum PlayerSprite {
 	IDLE,
 	WALK,
 	INTERACT,
+	GRIN,
 	
 	_MAX
 }
@@ -33,6 +34,7 @@ function load_directional_sprite_array(spritename, sprite_type) {
 _register_player_sprite(ps.IDLE, ST.SINGLE, "NewIdle")
 _register_player_sprite(ps.WALK, ST.SINGLE, "NewWalk")
 _register_player_sprite(ps.INTERACT, ST.SINGLE, "NewAction")
+_register_player_sprite(ps.GRIN, ST.SINGLE, "NewSmile")
 
 function directional_sprite_index(dir, sprite_type) {
 	switch sprite_type {

@@ -5,6 +5,8 @@ event_inherited();
 
 has_been_spoken_to = false;
 
+set_shadow(shdPlayer, 0, 14)
+
 spr_idle = sprite_index
 spr_talk = sprite_index
 

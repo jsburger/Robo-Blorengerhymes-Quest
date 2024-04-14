@@ -1,5 +1,8 @@
 /// @description 
 
+
+draw_rectangle_simple(0, 0, camera_width, camera_height, c_black, .4)
+
 draw_self()
 if sprite_index != sprBook exit
 

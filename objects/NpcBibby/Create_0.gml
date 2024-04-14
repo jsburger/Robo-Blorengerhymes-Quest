@@ -10,7 +10,9 @@ on_talked_to = function() {
 		say_prompt(self, "Wanna play redlight greenlight?", ["Sure", "No!"], [
 			function() {
 				say_text(self, "Yippee!!!", function() {
-					with RedlightGreenlight start_game()
+					with RedlightGreenlight {
+						start_game()
+					}
 				})
 			},
 			function() {

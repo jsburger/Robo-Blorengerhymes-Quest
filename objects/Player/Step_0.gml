@@ -92,7 +92,9 @@ game_object_exit
 			else {
 				has_interaction = false;
 			}
-			
+		}
+		else {
+			has_interaction = false;
 		}
 	}
 	else {

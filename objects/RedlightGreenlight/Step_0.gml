@@ -1,46 +1,22 @@
 /// @description 
 pause_check_exit
 
-if fade_progress < 1 && fading {
-	fade_progress += .025;
-	if fade_progress >= 1 {
-		if starting {
-			fading = false
-			fade_progress = 0
-			starting = false
-			with Player {
-				is_visible = false;
-				other.player_pauser = active.modify().set(false)
-				other.player_x = x
-				other.player_y = y;
-				x = (other.x + NpcBibby.x)/2
-				y = other.y 
-			}
-			
-			alarm[0] = redlight_time()
-			var m = 64;
-			with instance_create(x, y - m, RGRunner) {
-				is_player = true;
-				sprite_index = sprPlayerNewWalk1
-			}
-			with instance_create(x, y + m, RGRunner) {
-				image_alpha = 0
-				stop_running()
-			}
+if !is_green {
+	with RGRunner if is_player && speed > 0 {
+		other.rage += 1
+	}
+	if rage > 60 {
+		with RGRunner {
+			can_run = false
+			stop_running()
 		}
-		if ending {
-			fading = false
-			fade_progress = 0
-			ending = false
-			if player_pauser != undefined {
-				player_pauser.clear()
-			}
-			with Player {
-				x = other.player_x
-				y = other.player_y
-				is_visible = true
-			}
-			with RGRunner instance_destroy()
-		}
+		rage = 0
+		alarm[0] = -1
+		with Textbox instance_destroy()
+		say_text(instance_get(NpcBibby), "I caught you! You lose!", function() {
+			end_game()
+		})
 	}
 }
+
+if is_active global.time_pause = true
