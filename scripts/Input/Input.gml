@@ -61,7 +61,7 @@ function getInput(inputName, inputType) {
 			break
 		
 		case (inputs.pause):
-			keys = [vk_escape];
+			keys = [vk_escape, vk_tab];
 			break;
 			
 		case (inputs.mouse_left):

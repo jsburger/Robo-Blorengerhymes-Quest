@@ -24,7 +24,7 @@
   ],
   "name":"sprNpcHungryTalk",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"NPCs",
     "path":"folders/Sprites/NPCs.yy",
@@ -80,7 +80,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":96,
-    "yorigin":96,
+    "yorigin":168,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

@@ -8,6 +8,8 @@ function say_text(initiator, lines, callback = undefined) {
 	if instance_exists(initiator) && variable_instance_exists(initiator, "talk") initiator.talk()
 }
 
+#macro say_line say_text
+
 function say_text_nonblocking(initiator, duration, lines, callback = undefined) {
 	if !is_array(lines) lines = [lines]
 	with instance_create_depth(0, 0, 0, Textbox) {

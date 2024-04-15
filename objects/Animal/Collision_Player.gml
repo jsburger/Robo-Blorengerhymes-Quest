@@ -1,6 +1,6 @@
 /// @description collect
 
-if collecting = false {
+if collecting = false && image_alpha >= .8{
 	collecting = true;
 	collect_dist = point_distance(x, y, other.x, other.y)
 	collect_angle = point_direction(other.x, other.y, x, y)

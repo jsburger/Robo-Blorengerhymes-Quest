@@ -1,5 +1,9 @@
 enum ITEMS {
 	BRICK,
+	DUMBELL,
+	FISH,
+	BUCKET,
+	GLOVE,
 	
 	_MAX
 }
