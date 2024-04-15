@@ -14,8 +14,8 @@
     "path":"folders/Objects/Puzzles.yy",
   },
   "parentObjectId":{
-    "name":"Interactable",
-    "path":"objects/Interactable/Interactable.yy",
+    "name":"GameObject",
+    "path":"objects/GameObject/GameObject.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

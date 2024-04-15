@@ -65,7 +65,7 @@ start_game = function() {
 			stop_running()
 		}
 		
-		schedule(1 sec, function() {
+		schedule(3 sec, function() {
 			start_race()
 		})
 	})
