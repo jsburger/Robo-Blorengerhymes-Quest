@@ -1,3 +1,3 @@
 /// @description 
-x = camera_width - 256
-y = 64
+x = camera_width - 200
+y = 48

@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"BurialMound",
+  "%Name":"BrainSpawner",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"BurialMound",
+  "name":"BrainSpawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Frog",
-    "path":"folders/Objects/Puzzles/Frog.yy",
+    "name":"Brain",
+    "path":"folders/Objects/Puzzles/Brain.yy",
   },
   "parentObjectId":{
-    "name":"Interactable",
-    "path":"objects/Interactable/Interactable.yy",
+    "name":"AnimalSpawner",
+    "path":"objects/AnimalSpawner/AnimalSpawner.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,12 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprMound",
-    "path":"sprites/sprMound/sprMound.yy",
+    "name":"sprBrainIdle",
+    "path":"sprites/sprBrainIdle/sprBrainIdle.yy",
   },
   "spriteMaskId":null,
-  "tags":[
-    "Solid",
-  ],
-  "visible":true,
+  "visible":false,
 }

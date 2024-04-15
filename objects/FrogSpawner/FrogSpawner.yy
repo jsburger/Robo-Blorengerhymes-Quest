@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"LoopySpawner",
+  "%Name":"FrogSpawner",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"LoopySpawner",
+  "name":"FrogSpawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Loopy",
-    "path":"folders/Objects/Puzzles/Loopy.yy",
+    "name":"Frog",
+    "path":"folders/Objects/Puzzles/Frog.yy",
   },
   "parentObjectId":{
     "name":"AnimalSpawner",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprLoopyIdle",
-    "path":"sprites/sprLoopyIdle/sprLoopyIdle.yy",
+    "name":"sprFrogIdle",
+    "path":"sprites/sprFrogIdle/sprFrogIdle.yy",
   },
   "spriteMaskId":null,
   "visible":false,

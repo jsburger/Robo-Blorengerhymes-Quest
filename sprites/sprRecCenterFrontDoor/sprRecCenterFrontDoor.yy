@@ -24,7 +24,7 @@
   ],
   "name":"sprRecCenterFrontDoor",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Background",
     "path":"folders/Sprites/Background.yy",
@@ -80,7 +80,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":112,
-    "yorigin":112,
+    "yorigin":244,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

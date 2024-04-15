@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"BurialMound",
+  "%Name":"InvisibleLight",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"BurialMound",
+  "name":"InvisibleLight",
   "overriddenProperties":[],
   "parent":{
-    "name":"Frog",
-    "path":"folders/Objects/Puzzles/Frog.yy",
+    "name":"Room Parts",
+    "path":"folders/Objects/Room Parts.yy",
   },
   "parentObjectId":{
-    "name":"Interactable",
-    "path":"objects/Interactable/Interactable.yy",
+    "name":"GameObject",
+    "path":"objects/GameObject/GameObject.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -28,17 +28,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"light_size","filters":[],"listItems":[],"multiselect":false,"name":"light_size","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":1,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprMound",
-    "path":"sprites/sprMound/sprMound.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
-  "tags":[
-    "Solid",
-  ],
   "visible":true,
 }
