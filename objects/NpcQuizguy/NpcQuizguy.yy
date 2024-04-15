@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"BurialMound",
+  "%Name":"NpcQuizguy",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"BurialMound",
+  "name":"NpcQuizguy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Frog",
-    "path":"folders/Objects/Puzzles/Frog.yy",
+    "name":"Brain",
+    "path":"folders/Objects/Puzzles/Brain.yy",
   },
   "parentObjectId":{
-    "name":"Interactable",
-    "path":"objects/Interactable/Interactable.yy",
+    "name":"NPC",
+    "path":"objects/NPC/NPC.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,12 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprMound",
-    "path":"sprites/sprMound/sprMound.yy",
+    "name":"sprNpcNerdIdle",
+    "path":"sprites/sprNpcNerdIdle/sprNpcNerdIdle.yy",
   },
   "spriteMaskId":null,
-  "tags":[
-    "Solid",
-  ],
   "visible":true,
 }

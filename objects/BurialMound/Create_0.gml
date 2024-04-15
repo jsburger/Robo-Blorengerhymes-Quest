@@ -31,7 +31,7 @@ on_item = function(item) {
 						
 						if global.buried_item == ITEMS.FISH {
 							with Player action_cooldown = 5 sec;
-							with LoopySpawner spawn()
+							with FrogSpawner spawn()
 						}
 					},
 					pass]

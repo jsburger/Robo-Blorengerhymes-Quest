@@ -7,6 +7,9 @@ if collecting {
 }
 else if image_alpha < .8 {
 	image_alpha += .005
+	if image_alpha >= .8 && animal == ANIMALS.BRAIN {
+		say_text_nonblocking(self, 1 sec, "You stupid")
+	}
 }
 if collecting {
 	if collect_time < 25 {

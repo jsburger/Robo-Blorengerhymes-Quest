@@ -3,4 +3,5 @@
 // Inherit the parent event
 event_inherited();
 
-animal = ANIMALS.LOOPY
+image_alpha = 0
+set_light(light_size)
