@@ -123,6 +123,7 @@
     {"id":{"name":"NPC","path":"objects/NPC/NPC.yy",},},
     {"id":{"name":"NpcBibby","path":"objects/NpcBibby/NpcBibby.yy",},},
     {"id":{"name":"NpcFish","path":"objects/NpcFish/NpcFish.yy",},},
+    {"id":{"name":"Prop","path":"objects/Prop/Prop.yy",},},
     {"id":{"name":"ObjectSpawner","path":"objects/ObjectSpawner/ObjectSpawner.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"Pot","path":"objects/Pot/Pot.yy",},},
