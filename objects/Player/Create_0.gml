@@ -1,5 +1,10 @@
 /// @description 
 // Inherit the parent event
+if instance_number(Player) > 1 {
+	instance_destroy()
+	exit
+}
+
 event_inherited();
 #region Generic
 	set_shadow(shdPlayer, 0, 12)

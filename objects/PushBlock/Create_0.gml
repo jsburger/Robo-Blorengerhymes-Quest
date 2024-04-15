@@ -25,6 +25,7 @@ try_push = function(from_side) {
 start_push = function(to_point) {
 	pushing = true;
 	push_location = to_point;
+	sound_play(sndStone)
 }
 stop_push = function() {
 	pushing = false;
