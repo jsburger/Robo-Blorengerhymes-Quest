@@ -3,7 +3,7 @@ layer = layer_get_id("Instances")
 
 var inst = global.relative_to_gamecont.instances()
 for (var i = 0; i < array_length(inst); i++) {
-	inst[i].depth = GameCont.depth - inst[i].gc_offset
+	inst[i].depth = get_gc_depth(inst[i].gc_offset)
 }
 
 cam_setup()

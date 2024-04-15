@@ -1,7 +1,7 @@
 /// @description 
 gc_offset = _GC_OFFSET.TEXT
 
-depth = GameCont.depth - gc_offset
+depth = get_gc_depth(gc_offset)
 
 is_prompt = false;
 blocking = true;

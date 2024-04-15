@@ -9,6 +9,21 @@
 	canz = true; // set to false if you dont want an object to run z axis code
 #endregion
 
+#region Lights
+	has_light = false
+	light_x = 0;
+	light_y = 0;
+	light_radius = 0;
+	light_intensity = 0;
+	function set_light(radius, intensity = 1, _x = 0, _y = 0) {
+		has_light = true;
+		light_x = _x
+		light_y = _y;
+		light_radius = radius
+		light_intensity = intensity
+	}
+#endregion
+
 #region Depth Sorting
 	
 	is_visible = visible; //Custom replacement for visible

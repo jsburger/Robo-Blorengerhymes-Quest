@@ -17,13 +17,14 @@ function __createShadowSpace() {
 	
 	
 	draw_sprite(sprLUT, 0, 0, 0)
-	
-	surface_reset_target()
 	shader_reset()
+	draw_rectangle_simple(254, 14, 258, 17, c_white)
+	surface_reset_target()
+	
 	
 	global.sprShadows = sprite_create_from_surface(surface, 0, 0, 256, 16, false, false, 0, 0);
-	//surface_free(surface)
-	//surface_save(surface, "C:/Users/dizzy/Desktop/roboblors quest/" + "ColorMap.png")
+	surface_free(surface)
+	//surface_save(surface, "C:/Users/dizzy/Desktop/creatures/" + "ColorMap.png")
 }
 
 // Instances will draw above shadows of their layer, and draw shadows at their layer

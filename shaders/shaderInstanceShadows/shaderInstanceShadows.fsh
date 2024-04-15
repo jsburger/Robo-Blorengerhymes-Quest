@@ -3,6 +3,7 @@ varying vec4 v_vColour;
 
 uniform sampler2D Palette; //Color map texture
 uniform sampler2D Shadow; // Shadow surface
+uniform sampler2D Lights; // Lights surface
 uniform float ShadowMaskValue;
 uniform float AmbientLight;
 uniform int Flashing;
@@ -38,6 +39,9 @@ void main()
 	
 	float dif = (shadowValue - ShadowMaskValue);
 	float intensity = AmbientLight;
+	
+	intensity -= texture2D(Lights, shadowPos).r;
+	
 	//If shadow is greater than mask;
 	if (dif > 0.001) {
 		intensity = 1.0;

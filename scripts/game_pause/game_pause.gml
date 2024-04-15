@@ -2,6 +2,7 @@ global.paused = false;
 
 function game_pause(and_turn_to = -1) {
 	global.paused = true;
+	time_source_pause(global.game_source)
 	pause_instances()
 	
 	with instance_create(camera_width/2, camera_height/2, Book) {
@@ -16,6 +17,7 @@ function game_unpause() {
 
 function game_really_unpause() {
 	global.paused = false;
+	time_source_resume(global.game_source)
 	unpause_instances()
 	
 }

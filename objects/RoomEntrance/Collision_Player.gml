@@ -1,7 +1,11 @@
 /// @description 
 
 if can_transit {
-	room_goto_REAL(target_room, is_area_transition ? AreaTransition : WipeTransition)
+	with Player is_visible = false
+	schedule(1, function() {
+		room_goto_REAL(target_room, is_area_transition ? AreaTransition : WipeTransition)
+		Player.is_visible = true
+	})
 	can_transit = false;
 }
 

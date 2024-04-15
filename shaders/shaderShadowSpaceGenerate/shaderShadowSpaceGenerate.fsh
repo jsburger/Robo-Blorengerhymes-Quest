@@ -5,6 +5,7 @@ uniform sampler2D pal;
 uniform float color_count;
 
 vec3 convertToWeird(vec3 color) {
+	
 	const float Xr = 95.047;
 	const float Yr = 100.0;
 	const float Zr = 108.883;

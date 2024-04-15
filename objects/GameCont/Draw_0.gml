@@ -28,16 +28,14 @@ for (var i = 0; i < array_length(surfaces); i++) {
 	surface_reset_target()
 }
 var shadow_surf = surfaces[0],
-	clone_surf = surfaces[1];
+	clone_surf = surfaces[1],
+	light_surf = surfaces[2];
 
 surface_copy(clone_surf, 0, 0, application_surface)
 
 // Set up Shadows
 surface_set_target(shadow_surf)
-if dark >= 1 {
-	draw_clear(c_white)
-}
-else {
+ {
 	var a = [];
 	_y = 0;
 	var inst = noone;
@@ -64,6 +62,18 @@ else {
 disable_fog()
 surface_reset_target()
 
+surface_set_target(light_surf)
+if dark > 0 {
+	with GameObject if is_visible && has_light {
+		var color = merge_color(c_black, c_white, light_intensity / 2)
+		draw_circle_color(x + light_x, y + light_y, light_radius, color, color, false)
+	}
+	with GameObject if is_visible && has_light {
+		var color = merge_color(c_black, c_white, light_intensity)
+		draw_circle_color(x + light_x, y + light_y, light_radius * .7, color, color, false)
+	}
+}
+surface_reset_target()
 
 //Set up Shader
 var shader = shaderInstanceShadows;
@@ -71,6 +81,7 @@ shader_set(shaderInstanceShadows)
 
 texture_set_stage(shader_get_sampler_index(shader, "Palette"), sprite_get_texture(global.sprShadows, 0));
 texture_set_stage(shader_get_sampler_index(shader, "Shadow"), surface_get_texture(shadow_surf))
+texture_set_stage(shader_get_sampler_index(shader, "Lights"), surface_get_texture(light_surf))
 shader_set_uniform_f(shader_get_uniform(shader, "AmbientLight"), dark)
 
 //if (!global.paused) {

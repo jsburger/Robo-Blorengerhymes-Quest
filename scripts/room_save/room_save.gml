@@ -1,9 +1,9 @@
 global._roomcache = new Cache();
-global._extradata = [];
+global._room_extra = new Cache();
 
 add_reset_hook(function() {
 	global._roomcache = new Cache();
-	global._extradata = [];
+	global._room_extra = new Cache();
 })
 
 function room_save() {
@@ -16,8 +16,11 @@ function room_save() {
 			array_push(save, data)
 		}
 	}))
-	cache.set(room, array_concat(save, global._extradata))
-	global._extradata = [];
+	var a = save;
+	if global._room_extra.has(room) {
+		a = array_concat(save, global._room_extra.get(room))
+	}
+	cache.set(room, a)
 }
 
 function room_load() {
@@ -38,7 +41,14 @@ function room_load() {
 /// Manually serialize an instance. To be used before destroying something that needs info saved.
 function remember_me() {
 	if can_serialize && should_serialize() && !persistent {
-		var a = global._extradata;
+		var cache = global._room_extra;
+		var a = []
+		if cache.has(room) {
+			a = cache.get(room)
+		}
+		else {
+			cache.set(room, a)
+		}
 		var index = array_find_index(a, function(element) {
 			return element[0] == id
 		})

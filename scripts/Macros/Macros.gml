@@ -19,7 +19,7 @@ global.Dev = false;
 #macro spriteframes * 6
 
 //Functions
-#macro trace show_debug_message
+#macro trace if DEV show_debug_message
 #macro returnfunc function() { return
 
 #macro z_gravity 1

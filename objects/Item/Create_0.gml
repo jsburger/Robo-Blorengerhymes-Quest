@@ -4,6 +4,7 @@
 event_inherited();
 
 item = image_index
+image_speed = 0
 
 on_interact = function() {
 	give_item(item)

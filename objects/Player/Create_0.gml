@@ -3,6 +3,7 @@
 event_inherited();
 #region Generic
 	set_shadow(shdPlayer, 0, 12)
+	//set_light(84)
 #endregion
 
 #region Movement

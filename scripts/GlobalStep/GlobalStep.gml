@@ -15,6 +15,7 @@ draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 draw_set_font(Limestock)
 
+#macro DEV true
 
 
 //Runs every frame that the game isn't paused.

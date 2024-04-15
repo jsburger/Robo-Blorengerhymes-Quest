@@ -2,7 +2,7 @@
 
 gc_offset = _GC_OFFSET.CAPTURE
 
-depth = GameCont.depth - gc_offset
+depth = get_gc_depth(gc_offset)
 
 current_surface = surface_create(camera_width, camera_height);
 

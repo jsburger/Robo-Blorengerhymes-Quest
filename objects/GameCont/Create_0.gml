@@ -5,10 +5,12 @@ if instance_number(GameCont) > 1 {
 	exit
 }
 
+trace("Total intuition: " + string(get_total_intuition()))
+
 DepthGrid = ds_grid_create(2, 1);
 
 surfaces = []
-repeat(2) {
+repeat(3) {
 	array_push(surfaces, surface_create(room_width, room_height))
 }
 
