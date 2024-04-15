@@ -25,17 +25,6 @@ game_object_exit
 	if (action_cooldown <= 0) {
 		
 		
-		if button_check(inputs.item) {
-			item_hold += 1
-			if item_hold == item_hold_max instance_create(x, y, InventoryDisplay)
-		}
-		else {
-			item_hold = 0
-		}
-		with InventoryDisplay {
-			x = other.x
-			y = other.y - 80
-		}
 		if item_hold >= item_hold_max {
 			if array_length(global.items) > 0 {
 				if button_pressed(inputs.left) {
@@ -130,6 +119,18 @@ game_object_exit
 		}
 		else {
 			has_interaction = false;
+		}
+		
+		if button_check(inputs.item) {
+			item_hold += 1
+			if item_hold == item_hold_max instance_create(x, y, InventoryDisplay)
+		}
+		else {
+			item_hold = 0
+		}
+		with InventoryDisplay {
+			x = other.x
+			y = other.y - 80
 		}
 	}
 	else {

@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"AlanSpawner",
+  "%Name":"StarfishSpawner",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"AlanSpawner",
+  "name":"StarfishSpawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alan",
-    "path":"folders/Objects/Puzzles/Alan.yy",
+    "name":"Starfish",
+    "path":"folders/Objects/Puzzles/Starfish.yy",
   },
   "parentObjectId":{
     "name":"AnimalSpawner",
@@ -34,12 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprAlanIdle",
-    "path":"sprites/sprAlanIdle/sprAlanIdle.yy",
+    "name":"sprStarfishIdle",
+    "path":"sprites/sprStarfishIdle/sprStarfishIdle.yy",
   },
   "spriteMaskId":null,
-  "tags":[
-    "Serializable",
-  ],
   "visible":false,
 }

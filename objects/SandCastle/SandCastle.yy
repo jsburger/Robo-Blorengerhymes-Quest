@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"AlanSpawner",
+  "%Name":"SandCastle",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"AlanSpawner",
+  "name":"SandCastle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Alan",
-    "path":"folders/Objects/Puzzles/Alan.yy",
+    "name":"Starfish",
+    "path":"folders/Objects/Puzzles/Starfish.yy",
   },
   "parentObjectId":{
-    "name":"AnimalSpawner",
-    "path":"objects/AnimalSpawner/AnimalSpawner.yy",
+    "name":"Interactable",
+    "path":"objects/Interactable/Interactable.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,12 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprAlanIdle",
-    "path":"sprites/sprAlanIdle/sprAlanIdle.yy",
+    "name":"sprSandcastle",
+    "path":"sprites/sprSandcastle/sprSandcastle.yy",
   },
   "spriteMaskId":null,
-  "tags":[
-    "Serializable",
-  ],
-  "visible":false,
+  "visible":true,
 }

@@ -37,6 +37,7 @@ enum ANIMALS {
 	FROG,
 	MOTH,
 	BRAIN,
+	STARFISH,
 	
 	_MAX
 }
@@ -52,6 +53,7 @@ register_animal(ANIMALS.LOOPY, "Loopy", sprLoopyIdle, "weeeweeweweww", "He's fun
 register_animal(ANIMALS.FROG, "Froggy", sprLoopyIdle, "Has a fascination with life.", "Poor fishy...")
 register_animal(ANIMALS.MOTH, "Moth", sprMothmanIdle, "Lives in the dark, likes lights", "mothy")
 register_animal(ANIMALS.BRAIN, "Brain", sprBrainIdle, "You stupid", "21")
+register_animal(ANIMALS.STARFISH, "Starfish", sprStarfishIdle, "Likes water", "patric")
 
 function animal_found(animal) {
 	return global._has_animal[animal]

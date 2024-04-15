@@ -5,7 +5,9 @@ if solved exit
 
 var a = [];
 with AlanBlock {
-	array_push(a, self)
+	if get_letter() != "F" {
+		array_push(a, self)
+	}
 }
 var sorted = array_mapped_sort(a, "x")
 var last_x = sorted[0].x,
@@ -29,6 +31,10 @@ if found {
 		str += sorted[i].get_letter()
 	}
 	if str != "ALAN" found = false
+	if str == "ANAL" && !farted{
+		farted = true;
+		sound_play(sndFoghorn)
+	}
 }
 
 if found {
@@ -42,5 +48,8 @@ if found {
 			inst.flash = 8
 		}, [sorted[i]])
 	}
+	schedule(32, function() {
+		spawn()
+	})
 		
 }
