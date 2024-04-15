@@ -24,7 +24,8 @@ if crawl <= 0 {
 if its_time_to_go {
 	death += 1;
 	y += 50
-	if death > .5 sec {
+	if death > .25 sec {
+		sound_play(sndBookClose01)
 		instance_destroy()
 		game_really_unpause()
 	}

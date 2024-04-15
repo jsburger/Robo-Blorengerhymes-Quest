@@ -31,6 +31,8 @@ enum ANIMALS {
 	BOOGER,
 	JUMPSCARE,
 	BLOCKY,
+	FOOT,
+	MUSHROOM,
 	
 	_MAX
 }
@@ -40,6 +42,8 @@ register_animal(ANIMALS.DANZO, "Danzo", sprDanzoIdle, "Drawn to fierce competiti
 register_animal(ANIMALS.BOOGER, "Booger", sprBoogerIdle, "Likes to share snacks", "Booger!")
 register_animal(ANIMALS.JUMPSCARE, "Fish", sprJumpscareIdle, "Found in horrible dark places.", "Yuck!")
 register_animal(ANIMALS.BLOCKY, "Blocky", sprBlockyIdle, "Finish something incomplete.", "Bricky...")
+register_animal(ANIMALS.FOOT, "Bigfoot", sprFootIdle, "Treadmill", "Stinky...")
+register_animal(ANIMALS.MUSHROOM, "Horace", sprMushroomIdle, "He could be anywhere...", "You found him!")
 
 function animal_found(animal) {
 	return global._has_animal[animal]

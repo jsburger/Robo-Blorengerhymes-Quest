@@ -25,7 +25,7 @@
   ],
   "name":"sprTreadmill",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Rec Center",
     "path":"folders/Sprites/Puzzles/Rec Center.yy",
@@ -84,7 +84,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":56,
-    "yorigin":56,
+    "yorigin":16,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

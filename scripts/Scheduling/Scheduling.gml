@@ -1,7 +1,7 @@
 //global.scheduling_source = time_source_create_parent(time_source_game);
 
 function schedule(frames, callback, args = []) {
-	var source = time_source_create(time_source_game, frames, time_source_units_frames, callback, args);
+	var source = time_source_create(time_source_game, floor(frames), time_source_units_frames, callback, args);
 	time_source_start(source);
 	return source;
 }
