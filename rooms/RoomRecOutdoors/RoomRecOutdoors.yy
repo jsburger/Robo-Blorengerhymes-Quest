@@ -12,6 +12,7 @@
     {"name":"inst_7AEB1C67","path":"rooms/RoomRecOutdoors/RoomRecOutdoors.yy",},
     {"name":"inst_352F0166","path":"rooms/RoomRecOutdoors/RoomRecOutdoors.yy",},
     {"name":"inst_6BED1D0E","path":"rooms/RoomRecOutdoors/RoomRecOutdoors.yy",},
+    {"name":"inst_7A21B073","path":"rooms/RoomRecOutdoors/RoomRecOutdoors.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -29,6 +30,9 @@
         {"$GMRInstance":"","%Name":"inst_7AEB1C67","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7AEB1C67","objectId":{"name":"Intuition","path":"objects/Intuition/Intuition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":640.0,},
         {"$GMRInstance":"","%Name":"inst_352F0166","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_352F0166","objectId":{"name":"Intuition","path":"objects/Intuition/Intuition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":896.0,},
         {"$GMRInstance":"","%Name":"inst_6BED1D0E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6BED1D0E","objectId":{"name":"Intuition","path":"objects/Intuition/Intuition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":768.0,},
+        {"$GMRInstance":"","%Name":"inst_7A21B073","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7A21B073","objectId":{"name":"RoomEntrance","path":"objects/RoomEntrance/RoomEntrance.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"RoomEntrance","path":"objects/RoomEntrance/RoomEntrance.yy",},"propertyId":{"name":"target_room","path":"objects/RoomEntrance/RoomEntrance.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"RoomHole",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-180.0,"scaleX":1.0,"scaleY":5.0,"x":32.0,"y":672.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Decor","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_47E3937F","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_47E3937F","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprRecCenter","path":"sprites/sprRecCenter/sprRecCenter.yy",},"x":512.0,"y":288.0,},

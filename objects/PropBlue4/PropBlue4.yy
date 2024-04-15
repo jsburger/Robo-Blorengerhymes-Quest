@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"NpcDutchess",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"PropBlue4",
+  "eventList":[],
   "managed":true,
-  "name":"NpcDutchess",
+  "name":"PropBlue4",
   "overriddenProperties":[],
   "parent":{
-    "name":"NPCs",
-    "path":"folders/Objects/NPCs.yy",
+    "name":"Props",
+    "path":"folders/Objects/Props.yy",
   },
   "parentObjectId":{
-    "name":"NPC",
-    "path":"objects/NPC/NPC.yy",
+    "name":"Prop",
+    "path":"objects/Prop/Prop.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprNpcDutchessIdle",
-    "path":"sprites/sprNpcDutchessIdle/sprNpcDutchessIdle.yy",
+    "name":"sprBlueProp4",
+    "path":"sprites/sprBlueProp4/sprBlueProp4.yy",
   },
   "spriteMaskId":null,
   "visible":true,
