@@ -1,3 +1,2 @@
-/// @description 
-x = camera_width - 128
-y = 64
+image_alpha = 0
+depth = GameCont.depth - 1

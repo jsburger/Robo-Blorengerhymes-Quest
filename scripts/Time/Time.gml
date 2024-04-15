@@ -32,3 +32,14 @@ function __time_step() {
 		global.time_pause -= 1;
 	}
 }
+
+function time_get_hour() {
+	return (floor((global.time/global.time_max) * 24) + 8) mod 24
+}
+
+function time_get_display_hour() {
+	var t = time_get_hour() mod 12;
+	if t == 0 return 12
+	return t
+	
+}

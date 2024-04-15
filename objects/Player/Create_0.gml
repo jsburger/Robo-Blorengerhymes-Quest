@@ -22,6 +22,9 @@ event_inherited();
 	attack_buffer_max = 5;
 	attack_buffer = 0;
 	
+	item_hold = 0;
+	item_hold_max = 20;
+	
 	thrown_object_speed = 24;
 	carry_height = 40;
 #endregion

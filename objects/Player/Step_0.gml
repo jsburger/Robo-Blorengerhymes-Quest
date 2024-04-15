@@ -3,7 +3,7 @@ game_object_exit
 
 #region Controls
 
-	if (can_walk.get()) {
+	if (can_walk.get() && item_hold < item_hold_max) {
 		var _x = button_check(inputs.right) - button_check(inputs.left),
 			_y = button_check(inputs.down) - button_check(inputs.up);
 		if (_x != 0 || _y != 0) {
@@ -23,6 +23,33 @@ game_object_exit
 	//}
 	
 	if (action_cooldown <= 0) {
+		
+		
+		if button_check(inputs.item) {
+			item_hold += 1
+			if item_hold == item_hold_max instance_create(x, y, InventoryDisplay)
+		}
+		else {
+			item_hold = 0
+		}
+		with InventoryDisplay {
+			x = other.x
+			y = other.y - 80
+		}
+		if item_hold >= item_hold_max {
+			if array_length(global.items) > 0 {
+				if button_pressed(inputs.left) {
+					global.selected_item -= 1;
+					if global.selected_item < 0 global.selected_item = array_length(global.items) - 1
+				}
+				if button_pressed(inputs.right) {
+					global.selected_item += 1
+					if global.selected_item >= array_length(global.items) global.selected_item = 0
+				}
+			}
+		}
+		
+		
 		// Attack
 		//if (can_attack && attack_buffer > 0) {
 		//	state_change(PlayerStates.ATTACKING)
@@ -82,11 +109,19 @@ game_object_exit
 			}
 			if instance_exists(target) {
 				has_interaction = true;
-				if button_pressed(inputs.interact) {
+				if button_released(inputs.item) && item_hold < item_hold_max && array_length(global.items) > 0 {
 					state_change(PlayerStates.INTERACTING)
 					speed = 0
-					target.on_interact()
+					target.on_item(global.selected_item)
 					action_cooldown = 4 spriteframes
+				}
+				else {
+					if button_pressed(inputs.interact) {
+						state_change(PlayerStates.INTERACTING)
+						speed = 0
+						target.on_interact()
+						action_cooldown = 4 spriteframes
+					}
 				}
 			}
 			else {

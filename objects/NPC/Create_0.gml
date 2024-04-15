@@ -20,3 +20,11 @@ on_interact = function() {
 	talk()
 	on_talked_to()
 }
+
+on_item = function(item) {
+	reject_item()
+}
+
+reject_item = function() {
+	say_text(self, "Huh?")
+}

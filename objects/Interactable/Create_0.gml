@@ -8,3 +8,5 @@ can_interact = function() {
 	return true
 }
 on_interact = function() {}
+
+on_item = function(item) {}
