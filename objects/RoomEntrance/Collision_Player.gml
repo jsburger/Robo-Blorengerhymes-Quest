@@ -7,6 +7,7 @@ if can_transit {
 		Player.is_visible = true
 	})
 	can_transit = false;
+	if is_area_transition sound_play(sndDoor)
 }
 
 

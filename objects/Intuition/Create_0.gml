@@ -25,3 +25,10 @@ function(data) {
 		sprite_index = data.sprite_index
 	}
 })
+
+get_sound = function() {
+	static last_one = 0;
+	static values = [sndPickup01, sndPickup02, sndPickup03, sndPickup04];
+	last_one = (last_one + 1) mod array_length(values)
+	return values[last_one]
+}

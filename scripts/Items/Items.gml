@@ -25,7 +25,9 @@ function has_item(item) {
 
 function give_item(item) {
 	array_push(global.items, item)
-	trace(global.items)
+	with Player with instance_create(x, y, ItemPickupDisplay) {
+		image_index = item
+	}
 }
 
 function item_should_spawn(item) {

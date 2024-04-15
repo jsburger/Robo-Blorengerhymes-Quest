@@ -8,7 +8,9 @@ if place_meeting(x, y, Player) {
 		Player.y = lerp(Player.y, y, .1) - Player.vspeed/1.5
 		charge += 1;
 		image_speed = 1
+		if !audio_is_playing(sndTreadmill) sound_play(sndTreadmill)
 	}
+	else if audio_is_playing(sndTreadmill) audio_stop_sound(sndTreadmill)
 }
 if charge > 15 sec {
 	with FootSpawner spawn()

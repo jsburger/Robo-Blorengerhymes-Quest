@@ -42,6 +42,7 @@ resign = function() {
 	say_text(self, ["Alright, you got me.", "I found one earlier...", "Here it is..."], function() {
 		fade_then(function() {
 			become_normal()
+			sound_play(sndPuke)
 			with HoraceSpawner spawn()
 		})
 	})

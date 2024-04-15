@@ -15,12 +15,15 @@ on_interact = function() {
 }
 
 candy = function() {
-	say_text(self, "A sweet treat you find in this cabinet so neat!")
+	sound_play(sndSnacks)
+	say_text(self, "What a sweet treat you find in this cabinet so neat!")
 }
 pickle = function() {
+	sound_play(sndSnacks)
 	say_text(self, "The sour bite of this pickle really gives you a tickle!")
 }
 chips = function() {
+	sound_play(sndSnacks)
 	say_text(self, ["You munch and crunch away on the little lunch!", "The sounds of your snacking echo through the house..."], function() {
 		with BoogerSpawner spawn()
 	})

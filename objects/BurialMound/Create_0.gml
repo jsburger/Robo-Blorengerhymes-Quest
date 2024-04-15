@@ -27,6 +27,7 @@ on_item = function(item) {
 						remove_item(current_item)
 						global.buried_item = current_item
 						go_buried(true)
+						sound_play(sndDig)
 						
 						if global.buried_item == ITEMS.FISH {
 							with Player action_cooldown = 5 sec;
@@ -60,6 +61,7 @@ on_interact = function() {
 					go_buried(false)
 					give_item(global.buried_item)
 					global.buried_item = -1
+					sound_play(sndDig)
 				},
 				pass
 			])

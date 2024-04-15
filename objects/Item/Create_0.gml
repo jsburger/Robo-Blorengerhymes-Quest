@@ -8,6 +8,7 @@ image_speed = 0
 
 on_interact = function() {
 	give_item(item)
+	sound_play(sndItem)
 	instance_destroy()
 }
 
