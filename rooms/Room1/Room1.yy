@@ -24,6 +24,7 @@
     {"name":"inst_51CD2E3F","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_17546260","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_A10E52C","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_307A5F95","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -50,6 +51,7 @@
         {"$GMRInstance":"","%Name":"inst_51CD2E3F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_51CD2E3F","objectId":{"name":"Intuition","path":"objects/Intuition/Intuition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":320.0,},
         {"$GMRInstance":"","%Name":"inst_17546260","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17546260","objectId":{"name":"Intuition","path":"objects/Intuition/Intuition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":320.0,},
         {"$GMRInstance":"","%Name":"inst_A10E52C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":6,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_A10E52C","objectId":{"name":"TreeGreen","path":"objects/TreeGreen/TreeGreen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":896.0,"y":704.0,},
+        {"$GMRInstance":"","%Name":"inst_307A5F95","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_307A5F95","objectId":{"name":"MusicBox","path":"objects/MusicBox/MusicBox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":5.0,"x":1152.0,"y":192.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Collision","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":22,"TileCompressedData":[
           -5,-2147483648,-8,5,-9,0,-4,-2147483648,-10,5,-8,0,-4,-2147483648,-5,5,-3,0,-3,5,-7,0,-7,-2147483648,

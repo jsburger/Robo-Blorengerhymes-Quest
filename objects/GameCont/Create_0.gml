@@ -13,6 +13,7 @@ surfaces = []
 repeat(3) {
 	array_push(surfaces, surface_create(room_width, room_height))
 }
+last_hour = 8
 
 dark = 0
 dark_goal = 0

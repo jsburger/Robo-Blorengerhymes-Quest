@@ -39,9 +39,12 @@ function global_step() {
 	if instance_exists(Player) && !instance_exists(TimeDisplay) {
 		instance_create(0, 0, TimeDisplay)
 	}
-
+	
 	if (global.music_follower != -1 && (global.sound_music != -1) && !audio_is_playing(global.sound_music)) {
 		sound_play_music(global.music_follower, -1)
+	}
+	if global.sound_music != -1 && global.music_follower == -1 && !audio_is_playing(global.sound_music) {
+		stop_music()
 	}
 	if (global.ambience_follower != -1 && (global.sound_ambience != -1) && !audio_is_playing(global.sound_ambience)) {
 		sound_play_ambience(global.ambience_follower, -1)
