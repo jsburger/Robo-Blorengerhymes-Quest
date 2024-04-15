@@ -68,3 +68,9 @@ function stop_ambience() {
 	global.sound_ambience= -1
 	global.ambience_follower = -1
 }
+
+function music_get() {
+	var hour = time_get_hour();
+	if hour >= 7 && hour < 18 return musDay;
+	return musNight;
+}

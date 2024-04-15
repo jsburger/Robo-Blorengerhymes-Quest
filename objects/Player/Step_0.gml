@@ -112,7 +112,7 @@ game_object_exit
 				if button_released(inputs.item) && item_hold < item_hold_max && array_length(global.items) > 0 {
 					state_change(PlayerStates.INTERACTING)
 					speed = 0
-					target.on_item(global.selected_item)
+					target.on_item(item_current())
 					action_cooldown = 4 spriteframes
 				}
 				else {
@@ -134,6 +134,8 @@ game_object_exit
 	}
 	else {
 		action_cooldown -= 1
+		
+		has_interaction = false
 	}
 	
 	#region Old

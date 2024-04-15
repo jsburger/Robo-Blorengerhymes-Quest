@@ -25,6 +25,7 @@ function has_item(item) {
 
 function give_item(item) {
 	array_push(global.items, item)
+	trace(global.items)
 }
 
 function item_should_spawn(item) {
@@ -46,5 +47,12 @@ function remove_item(item) {
 		array_delete(global.items, array_find(global.items, item), 1)
 }
 
+function item_get_name(item) {
+	static values = ["Brick", "Dumbell", "Fish", "Bucket", "Boxing Glove"];
+	return values[item]
+}
 
-
+function item_current() {
+	if array_length(global.items) <= 0 return -1
+	return global.items[global.selected_item]
+}

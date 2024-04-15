@@ -8,8 +8,8 @@
   "name":"AnimalSpawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Puzzles",
-    "path":"folders/Objects/Puzzles.yy",
+    "name":"Parent Objects",
+    "path":"folders/Objects/Parent Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

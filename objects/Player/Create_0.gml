@@ -8,11 +8,17 @@ if instance_number(Player) > 1 {
 event_inherited();
 #region Generic
 	set_shadow(shdPlayer, 0, 12)
+	
+	_get_depth = get_depth;
+	get_depth = function(inst = self) {
+		return _get_depth(inst) + 12
+	}
+	
 	//set_light(84)
 #endregion
 
 #region Movement
-	maxspeed = new Modifiable(5);
+	maxspeed = new Modifiable(6);
 	acceleration = .3;
 	friction = .5;
 #endregion
