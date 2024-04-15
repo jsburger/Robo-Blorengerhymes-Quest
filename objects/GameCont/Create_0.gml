@@ -16,7 +16,7 @@ repeat(3) {
 
 dark = 0
 dark_goal = 0
-dark_time = 1 sec
+dark_time = 2
 
 restoring = false; // If game over and need to put player on previous entrance
 restore_point = -1;
@@ -43,8 +43,8 @@ finish_transition = function() {
 	with GameObject setup.call();
 }
 
-cam_width = 800
-cam_height = 600
+cam_width = 1024
+cam_height = 768
 
 cam_setup = function() {
 	camera_destroy(view_camera[0])

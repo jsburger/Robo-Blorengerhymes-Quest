@@ -23,8 +23,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sprGrassGreen",
-    "path":"sprites/sprGrassGreen/sprGrassGreen.yy",
+    "name":"sprGrassBlue",
+    "path":"sprites/sprGrassBlue/sprGrassBlue.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

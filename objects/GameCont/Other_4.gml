@@ -6,6 +6,8 @@ for (var i = 0; i < array_length(inst); i++) {
 	inst[i].depth = get_gc_depth(inst[i].gc_offset)
 }
 
+if !DEV layer_set_visible(layer_get_id("Collision"), false)
+
 cam_setup()
 
 room_load()

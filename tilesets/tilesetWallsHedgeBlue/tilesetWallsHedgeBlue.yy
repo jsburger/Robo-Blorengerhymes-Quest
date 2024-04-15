@@ -23,8 +23,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sprWallsHedgesGreen",
-    "path":"sprites/sprWallsHedgesGreen/sprWallsHedgesGreen.yy",
+    "name":"sprWallsHedgesBlue",
+    "path":"sprites/sprWallsHedgesBlue/sprWallsHedgesBlue.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
