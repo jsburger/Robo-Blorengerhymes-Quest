@@ -4,7 +4,7 @@
 event_inherited();
 
 spr_talk = sprNpcDuckTalk
-
+set_shadow(shdPlayer, 6, 12)
 on_talked_to = function() {
 	
 	say_prompt(self, "Do you like me?", ["Yes", "No"],

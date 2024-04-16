@@ -3,8 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
-spr_talk = sprNpcSealTalk
-set_shadow(shdHaniwa, 0, 0)
+spr_talk = sprNpcShrimpTalk
+set_shadow(shdHaniwa, 0, 12)
 
 on_talked_to = function() {
 	
