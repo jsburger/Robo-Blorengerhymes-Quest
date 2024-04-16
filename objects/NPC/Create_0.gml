@@ -18,6 +18,7 @@ talk = function() {
 on_talked_to = function() {}
 on_interact = function() {
 	talk()
+	sound_play(sound_pool("sndTalk"))
 	on_talked_to()
 }
 
