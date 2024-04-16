@@ -10,6 +10,9 @@ spawn = function() {
 			image_alpha = 0
 			animal = other.animal
 		}
+		schedule(.5 sec, function() {
+			sound_play(animal_get(animal).sound)
+		})
 	}
 }
 
