@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprTransition",
-    "path":"sprites/sprTransition/sprTransition.yy",
+    "name":"sprTransitionCircle",
+    "path":"sprites/sprTransitionCircle/sprTransitionCircle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

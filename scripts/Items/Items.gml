@@ -55,6 +55,10 @@ function item_get_name(item) {
 }
 
 function item_current() {
-	if array_length(global.items) <= 0 return -1
+	var l = array_length(global.items)
+	if global.selected_item < 0 || global.selected_item >= l {
+		global.selected_item = l - 1
+	}
+	if l <= 0 return -1
 	return global.items[global.selected_item]
 }

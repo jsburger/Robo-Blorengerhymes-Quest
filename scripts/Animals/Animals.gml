@@ -5,6 +5,15 @@ add_reset_hook(function() {
 	global._has_animal = array_create(ANIMALS._MAX, false);
 })
 
+global.homo = {
+	animal : ANIMALS.HUMAN,
+	name: "???",
+	sound: sndDoor,
+	sprite : sprInteract,
+	hint: "Find all the others. Return to where you started.",
+	desc: "???"
+}
+
 function register_animal(animal, sprite, sound, name, hint, desc) {
 	global._animals[animal] = {
 		animal,
@@ -17,6 +26,7 @@ function register_animal(animal, sprite, sound, name, hint, desc) {
 }
 
 function animal_get(animal) {
+	if animal == ANIMALS.HUMAN && !animal_found(animal) return global.homo
 	return global._animals[animal]
 }
 
@@ -58,10 +68,10 @@ register_animal(ANIMALS.BOOGER, sprBoogerIdle, sndCreatureBooger,
     "Loves to share snacks.",
     "It's Booger! She's so precious and soft!")
 register_animal(ANIMALS.JUMPSCARE, sprJumpscareIdle, sndCreatureJumpscare,
-    "Fish",
-    "Can appear suddenly in the dark. It may take a few tries...",
-    "A misunderstood Gloggletop who loves to walk along the beach.")
-register_animal(ANIMALS.BLOCKY, sprBlockyIdle, sndCreatureStarfish, //TEMP
+    "Jesse",
+    "Appears suddenly when the lights go out. May take a few tries...",
+    "A misunderstood Globbletop who loves to walk along the beach.")
+register_animal(ANIMALS.BLOCKY, sprBlockyIdle, sndCreatureBlocky, //TEMP
     "Blocky", 
     "Complete something that's incomplete.", 
     "This square tries his best to keep up with the latest in pop music.")
@@ -93,14 +103,14 @@ register_animal(ANIMALS.STARFISH, sprStarfishIdle, sndCreatureStarfish,
     "Starfish", 
     "Have a little fun on the beach.",
     "She never refuses an opportunity to try something new.")
-register_animal(ANIMALS.EVIL, sprEvilIdle, sndEvilLaugh,
+register_animal(ANIMALS.EVIL, sprEvilIdle, sndCreatureCat,
     "Evil",
     "Do something evil.",
     "A foul creature with wicked intent.")
-register_animal(ANIMALS.HUMAN, sprEvilIdle, sndDoor, //TEMP
+register_animal(ANIMALS.HUMAN, sprHomoSapienIdle, sndDoor, //TEMP
     "Homo Sapien",
-    "Find all the others.",
-    "Human description")
+    "Find all the others. Return to where you started.",
+    "Went extinct in the 21st century.")
 
 function animal_found(animal) {
 	return global._has_animal[animal]

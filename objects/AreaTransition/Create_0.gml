@@ -15,8 +15,10 @@ progress = 0;
 growspeed = .0175
 
 set_position = function() {
-	x = Player.x
-	y = Player.y
+	if instance_exists(Player) {
+		x = Player.x
+		y = Player.y
+	}
 	//x = camera_center_x
 	//y = camera_center_y
 	x = lerp(x, camera_center_x, 1 * (1 - progress))

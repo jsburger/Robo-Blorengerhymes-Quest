@@ -29,5 +29,11 @@ if its_time_to_go {
 		instance_destroy()
 		game_really_unpause()
 		with LoopySpawner spawn()
+		if animal_found(ANIMALS.HUMAN) {
+			fade_then(function() {
+				with Player instance_destroy()
+				room_goto(RoomEnd)
+			})
+		}
 	}
 }

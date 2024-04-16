@@ -55,7 +55,7 @@ function global_step() {
 	Clickables_Step()
 
 	// Pausing:
-	if button_pressed(inputs.pause) {
+	if button_pressed(inputs.pause) && instance_exists(Player){
 		if !global.paused {
 			game_pause()
 		}

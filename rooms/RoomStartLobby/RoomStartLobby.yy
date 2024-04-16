@@ -10,6 +10,7 @@
     {"name":"inst_17AA5885","path":"rooms/RoomStartLobby/RoomStartLobby.yy",},
     {"name":"inst_F78E64D","path":"rooms/RoomStartLobby/RoomStartLobby.yy",},
     {"name":"inst_5F89AC36","path":"rooms/RoomStartLobby/RoomStartLobby.yy",},
+    {"name":"inst_6684B7C8","path":"rooms/RoomStartLobby/RoomStartLobby.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -27,6 +28,7 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"RoomEntrance","path":"objects/RoomEntrance/RoomEntrance.yy",},"propertyId":{"name":"is_area_transition","path":"objects/RoomEntrance/RoomEntrance.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"RoomEntrance","path":"objects/RoomEntrance/RoomEntrance.yy",},"propertyId":{"name":"target_room","path":"objects/RoomEntrance/RoomEntrance.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"RoomHomoSapienHallway",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":160.0,},
+        {"$GMRInstance":"","%Name":"inst_6684B7C8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6684B7C8","objectId":{"name":"LockedDoor","path":"objects/LockedDoor/LockedDoor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":97.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Decor","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_77F67EC0","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_77F67EC0","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprCarpetCircle","path":"sprites/sprCarpetCircle/sprCarpetCircle.yy",},"x":384.0,"y":864.0,},
@@ -40,7 +42,7 @@
     {"$GMRTileLayer":"","%Name":"Collision","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":19,"SerialiseWidth":16,"TileCompressedData":[
           -26,0,-5,5,-11,0,1,5,-3,0,1,5,-11,0,1,5,-3,0,1,5,-5,0,-6,-2147483648,5,5,-2147483648,0,0,5,-5,0,-6,-2147483648,
           5,5,-2147483648,0,0,5,-5,0,-2,-2147483648,1,0,-3,-2147483648,5,5,-2147483648,0,0,5,-11,0,1,5,-3,0,1,
-          5,-11,0,1,5,-3,0,3,5,0,0,-10,5,-3,0,4,5,0,-2147483648,5,-8,0,1,5,-3,0,6,5,0,-2147483648,5,0,0,-5,-2147483648,
+          5,-11,0,1,5,-3,0,3,5,0,0,-10,5,-3,0,4,5,0,-2147483648,5,-6,0,-3,5,-3,0,6,5,0,-2147483648,5,0,0,-5,-2147483648,
           9,0,5,0,0,-2147483648,5,-2147483648,-2147483648,5,-12,-2147483648,4,5,-2147483648,-2147483648,5,-12,
           -2147483648,4,5,-2147483648,-2147483648,5,-12,-2147483648,4,5,-2147483648,-2147483648,5,-12,-2147483648,
           4,5,-2147483648,-2147483648,5,-12,-2147483648,3,5,-2147483648,-2147483648,-14,5,-17,-2147483648,

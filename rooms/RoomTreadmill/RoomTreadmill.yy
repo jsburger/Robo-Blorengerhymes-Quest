@@ -12,6 +12,7 @@
     {"name":"inst_61A67E45","path":"rooms/RoomTreadmill/RoomTreadmill.yy",},
     {"name":"inst_36C5A804","path":"rooms/RoomTreadmill/RoomTreadmill.yy",},
     {"name":"inst_39E95296","path":"rooms/RoomTreadmill/RoomTreadmill.yy",},
+    {"name":"inst_5BB6CD32","path":"rooms/RoomTreadmill/RoomTreadmill.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -24,6 +25,9 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-180.0,"scaleX":1.0,"scaleY":2.0,"x":32.0,"y":384.0,},
         {"$GMRInstance":"","%Name":"inst_36C5A804","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":1,"imageSpeed":0.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_36C5A804","objectId":{"name":"Item","path":"objects/Item/Item.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":512.0,},
         {"$GMRInstance":"","%Name":"inst_39E95296","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_39E95296","objectId":{"name":"Intuition","path":"objects/Intuition/Intuition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":384.0,},
+        {"$GMRInstance":"","%Name":"inst_5BB6CD32","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5BB6CD32","objectId":{"name":"MusicBox","path":"objects/MusicBox/MusicBox.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"MusicBox","path":"objects/MusicBox/MusicBox.yy",},"propertyId":{"name":"music","path":"objects/MusicBox/MusicBox.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fuck_it_treadmill_song",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-0.42104426,"scaleX":2.0,"scaleY":2.0,"x":512.0,"y":384.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Decor","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_24D29616_1","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":2.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_24D29616_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprFloorGround","path":"sprites/sprFloorGround/sprFloorGround.yy",},"x":352.0,"y":544.0,},

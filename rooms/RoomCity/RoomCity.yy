@@ -40,6 +40,7 @@
     {"name":"inst_5873E80A","path":"rooms/RoomCity/RoomCity.yy",},
     {"name":"inst_502B6E8E","path":"rooms/RoomCity/RoomCity.yy",},
     {"name":"inst_28D5FB2C","path":"rooms/RoomCity/RoomCity.yy",},
+    {"name":"inst_5744B3FC","path":"rooms/RoomCity/RoomCity.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -85,6 +86,9 @@
         {"$GMRInstance":"","%Name":"inst_5873E80A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5873E80A","objectId":{"name":"Intuition","path":"objects/Intuition/Intuition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1792.0,"y":960.0,},
         {"$GMRInstance":"","%Name":"inst_502B6E8E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_502B6E8E","objectId":{"name":"NpcEater","path":"objects/NpcEater/NpcEater.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1760.0,"y":576.0,},
         {"$GMRInstance":"","%Name":"inst_28D5FB2C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28D5FB2C","objectId":{"name":"HoraceSpawner","path":"objects/HoraceSpawner/HoraceSpawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1760.0,"y":608.0,},
+        {"$GMRInstance":"","%Name":"inst_5744B3FC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5744B3FC","objectId":{"name":"MusicBox","path":"objects/MusicBox/MusicBox.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"MusicBox","path":"objects/MusicBox/MusicBox.yy",},"propertyId":{"name":"music","path":"objects/MusicBox/MusicBox.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"musBippy",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":8.0,"scaleY":5.5,"x":1664.0,"y":576.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Decor","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_4F60E019","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_4F60E019","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprFloorGrass","path":"sprites/sprFloorGrass/sprFloorGrass.yy",},"x":608.0,"y":736.0,},

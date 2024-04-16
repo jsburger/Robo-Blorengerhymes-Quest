@@ -1,6 +1,7 @@
 /// @description collect
 
-if collecting = false && image_alpha >= .8{
+if collecting = false && image_alpha >= .8 {
+	audio_stop_sound(sndCreatureHomoSapien_loop)
 	collecting = true;
 	collect_dist = point_distance(x, y, other.x, other.y)
 	collect_angle = point_direction(other.x, other.y, x, y)

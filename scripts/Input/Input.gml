@@ -51,10 +51,10 @@ function getInput(inputName, inputType) {
 			keys = ["I", "Z"]
 			break
 		case (inputs.pickup):
-			keys = ["J", "X"]
+			keys = ["J", "C"]
 			break
 		case (inputs.item):
-			keys = ["O", "C"]
+			keys = ["O", "X"]
 			break
 		case(inputs.back):
 			keys = ["O", "X"]

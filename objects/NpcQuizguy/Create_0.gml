@@ -5,6 +5,8 @@ event_inherited();
 
 spr_talk = sprNpcNerdTalk
 
+set_shadow(shdPlayer, -1, 32)
+
 on_talked_to = function() {
 	question = 0
 	correct_answers = 0

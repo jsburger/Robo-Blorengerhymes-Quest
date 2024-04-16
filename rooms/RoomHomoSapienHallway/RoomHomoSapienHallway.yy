@@ -9,6 +9,7 @@
     {"name":"inst_29278B8E_2_1_1_1","path":"rooms/RoomHomoSapienHallway/RoomHomoSapienHallway.yy",},
     {"name":"inst_5F89AC36_1","path":"rooms/RoomHomoSapienHallway/RoomHomoSapienHallway.yy",},
     {"name":"inst_6179EA4","path":"rooms/RoomHomoSapienHallway/RoomHomoSapienHallway.yy",},
+    {"name":"inst_7FECDF47","path":"rooms/RoomHomoSapienHallway/RoomHomoSapienHallway.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -22,6 +23,7 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"RoomEntrance","path":"objects/RoomEntrance/RoomEntrance.yy",},"propertyId":{"name":"target_room","path":"objects/RoomEntrance/RoomEntrance.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"RoomStartLobby",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"RoomEntrance","path":"objects/RoomEntrance/RoomEntrance.yy",},"propertyId":{"name":"is_area_transition","path":"objects/RoomEntrance/RoomEntrance.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":1952.0,},
+        {"$GMRInstance":"","%Name":"inst_7FECDF47","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7FECDF47","objectId":{"name":"Player","path":"objects/Player/Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":1920.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Collision","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":32,"SerialiseWidth":16,"TileCompressedData":[
           -6,0,-4,5,-12,0,4,5,0,0,5,-12,0,4,5,0,0,5,-12,0,4,5,0,0,5,-10,0,-2,-2147483648,6,5,-2147483648,-2147483648,
