@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprHouseWhite2",
-    "path":"sprites/sprHouseWhite2/sprHouseWhite2.yy",
+    "name":"sprHouseBlue2",
+    "path":"sprites/sprHouseBlue2/sprHouseBlue2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
