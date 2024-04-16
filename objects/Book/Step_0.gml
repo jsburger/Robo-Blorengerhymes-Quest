@@ -28,5 +28,6 @@ if its_time_to_go {
 		sound_play(sndBookClose01)
 		instance_destroy()
 		game_really_unpause()
+		with LoopySpawner spawn()
 	}
 }

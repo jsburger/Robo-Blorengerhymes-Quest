@@ -9,6 +9,7 @@
     {"name":"inst_29278B8E_2_1","path":"rooms/RoomStartBedroom/RoomStartBedroom.yy",},
     {"name":"inst_407EB9C7_2_1","path":"rooms/RoomStartBedroom/RoomStartBedroom.yy",},
     {"name":"inst_5DE397C9","path":"rooms/RoomStartBedroom/RoomStartBedroom.yy",},
+    {"name":"inst_3F927A6","path":"rooms/RoomStartBedroom/RoomStartBedroom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -19,6 +20,7 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"RoomEntrance","path":"objects/RoomEntrance/RoomEntrance.yy",},"propertyId":{"name":"target_room","path":"objects/RoomEntrance/RoomEntrance.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"RoomStartLobby",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"RoomEntrance","path":"objects/RoomEntrance/RoomEntrance.yy",},"propertyId":{"name":"is_area_transition","path":"objects/RoomEntrance/RoomEntrance.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":416.0,},
+        {"$GMRInstance":"","%Name":"inst_3F927A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F927A6","objectId":{"name":"LoopySpawner","path":"objects/LoopySpawner/LoopySpawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":320.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Decor","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_24D29616_2_1","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":2.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_24D29616_2_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprFloorGround","path":"sprites/sprFloorGround/sprFloorGround.yy",},"x":768.0,"y":544.0,},
