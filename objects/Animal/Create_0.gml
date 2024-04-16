@@ -7,6 +7,7 @@ animal = ANIMALS.ALAN
 collecting = false;
 does_wall_collision = false;
 
+
 shadow_layer = SHADOWMASK.TOP
 
 collect_time = 0
