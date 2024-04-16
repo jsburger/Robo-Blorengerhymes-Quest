@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndCreature01",
+  "%Name":"sndCreatureStarfish",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.038005,
-  "name":"sndCreature01",
+  "duration":1.881354,
+  "name":"sndCreatureStarfish",
   "parent":{
     "name":"Creatures",
     "path":"folders/Sounds/Creatures.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndCreature01.ogg",
+  "soundFile":"sndCreatureStarfish.ogg",
   "type":0,
   "volume":1.0,
 }

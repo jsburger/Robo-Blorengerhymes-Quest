@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndItem",
+  "%Name":"sndCreatureBrain",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.199002,
-  "name":"sndItem",
+  "duration":2.8161,
+  "name":"sndCreatureBrain",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Creatures",
+    "path":"folders/Sounds/Creatures.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndItem.ogg",
+  "soundFile":"sndCreatureBrain.ogg",
   "type":0,
   "volume":1.0,
 }
