@@ -16,6 +16,8 @@
     {"name":"inst_F420E10","path":"rooms/RoomSandRoom/RoomSandRoom.yy",},
     {"name":"inst_50220899","path":"rooms/RoomSandRoom/RoomSandRoom.yy",},
     {"name":"inst_51819A6","path":"rooms/RoomSandRoom/RoomSandRoom.yy",},
+    {"name":"inst_66F8ABA4","path":"rooms/RoomSandRoom/RoomSandRoom.yy",},
+    {"name":"inst_2A5CE06A","path":"rooms/RoomSandRoom/RoomSandRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -32,6 +34,8 @@
         {"$GMRInstance":"","%Name":"inst_F420E10","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F420E10","objectId":{"name":"PropBlue3","path":"objects/PropBlue3/PropBlue3.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":160.0,},
         {"$GMRInstance":"","%Name":"inst_50220899","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50220899","objectId":{"name":"PropBlue4","path":"objects/PropBlue4/PropBlue4.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":544.0,},
         {"$GMRInstance":"","%Name":"inst_51819A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_51819A6","objectId":{"name":"NpcDutchess","path":"objects/NpcDutchess/NpcDutchess.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":864.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_66F8ABA4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66F8ABA4","objectId":{"name":"SandCastle","path":"objects/SandCastle/SandCastle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":352.0,},
+        {"$GMRInstance":"","%Name":"inst_2A5CE06A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A5CE06A","objectId":{"name":"StarfishSpawner","path":"objects/StarfishSpawner/StarfishSpawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":416.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_1E6F25B1","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_1E6F25B1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sprFloorGround","path":"sprites/sprFloorGround/sprFloorGround.yy",},"x":1312.0,"y":640.0,},
