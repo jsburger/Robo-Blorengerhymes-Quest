@@ -9,7 +9,7 @@ on_talked_to = function() {
 	
 	say_prompt(self, "Do you like me?", ["Yes", "No"],
 		[function() {
-			say_text(self, "yippee!!!")
+			say_text(self, "Yippee!!!")
 		},
 		function () {
 			say_text(self, "GRAAAAHHH!!!!")

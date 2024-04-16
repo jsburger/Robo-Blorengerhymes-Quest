@@ -8,12 +8,5 @@ set_shadow(shdHaniwa, 0, 0)
 
 on_talked_to = function() {
 	
-	say_prompt(self, "Do you like me?", ["Yes", "No"],
-		[function() {
-			say_text(self, "yippee!!!")
-		},
-		function () {
-			say_text(self, "GRAAAAHHH!!!!")
-		}]
-	)
+	say_text(self, ["I'm just sitting here.", "I'm just enjoying my time here at the beach."])
 }
